@@ -3,12 +3,12 @@ lab:
   title: 02 - 테넌트 속성으로 작업
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: de8e11bfc7042577bcf8e5411cac1f4149101bdb
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: 36c7cdf2641017f0d9a15cfc2118f2d0bbeb1548
+ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421443"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368855"
 ---
 # <a name="lab-02-working-with-tenant-properties"></a>랩 02: 테넌트 속성 사용
 
@@ -101,9 +101,9 @@ Azure AD의 **속성** 영역에 조직의 개인 정보를 추가합니다. 속
 
      **새 브라우저 탭이 자동으로 열립니다.**
 
-4. **설정 및 개인 정보** 카드에서 **설정 및 개인 정보 보기 >** 를 선택합니다.
+4. 왼쪽 메뉴에서 **설정 및 프라이버시** 를 선택합니다.
 5. **개인 정보** 를 선택합니다.
-6. 사용자 **조직의 알림** Contoso Marketing 조직 개인정보취급방침 옆의 **보기** 항목을 클릭합니다.
+6. **조직의 알림** 에서 Contoso Marketing 조직 개인정보처리방침 옆의 **보기** 항목을 선택합니다.
 
      **새 브라우저 탭이 열리고 연결한 개인 정보 PDF 파일이 표시됩니다.**
 

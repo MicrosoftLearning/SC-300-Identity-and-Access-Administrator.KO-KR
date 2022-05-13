@@ -3,12 +3,12 @@ lab:
   title: 06 - 그룹 라이선스 할당 변경
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 43274c8456dd760022efd09fc7cbb0efcac1037f
-ms.sourcegitcommit: 533d012d39c31518af43d4a1d4bc091ea485d27c
+ms.openlocfilehash: a76182eb79197a26a692c5bab7bfcde1080a97c2
+ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "138690107"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368858"
 ---
 # <a name="lab-06-change-group-license-assignments"></a>랩 06: 그룹 라이선스 할당 변경
 
@@ -34,7 +34,7 @@ ms.locfileid: "138690107"
 
     ![현재 라이선스에 대해 선택된 라이선스 옵션과 강조 표시된 할당 메뉴 옵션을 보여주는 화면 이미지](./media/lp1-mod2-change-group-license.png)
 
-6. 라이선스 할당 업데이트 블레이드에서 **Windows 10 Enterprise E3** 라이선스를 선택한 다음 기존 라이선스 선택을 취소하고 라이선스 옵션을 추가 또는 제거하거나 원하는 다른 작업을 수행합니다.
+6. 라이선스 할당 업데이트 블레이드에서 **Windows 10/11 Enterprise E3** 라이선스를 선택한 다음, 기존 라이선스 선택을 취소하고, 라이선스 옵션을 추가 또는 제거하거나 원하는 다른 작업을 수행합니다.
 
 7. 완료되면 **저장** 을 선택합니다.
 

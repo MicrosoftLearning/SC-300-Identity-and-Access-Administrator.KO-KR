@@ -3,12 +3,12 @@ lab:
   title: 26 - 사용 약관 및 동의 보고 추가
   learning path: "04"
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: bb8be227870d16d1743a23206ef94fd24b5a7ef2
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: 2fc11e4fc38cbde5b7e517486450b16b0cea6195
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421389"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368743"
 ---
 # <a name="lab-26-add-terms-of-use-and-acceptance-reporting"></a>랩 26: 사용 약관 및 동의 보고 추가 
 
@@ -161,13 +161,9 @@ Azure AD 사용 약관 정책은 조직이 최종 사용자에게 정보를 제�
 
     ![동의한 사용자를 나열하는 사용 약관 동의 창](./media/accepted-tou.png)
 
-4. 개별 사용자에 대한 기록을 보려면 사용자 이름 오른쪽에 있는 줄임표를 선택한 다음 **기록 보기** 를 선택합니다.
+4. **사용 약관 동의** 페이지에서 **다운로드** 를 선택하여 동의 보고서를 다운로드합니다.
 
-    ![사용자 기록 보기 바로 가기 메뉴](./media/view-history-menu.png)
-
-5. [기록 보기] 창에서 모든 승인, 거부 및 만료 기록을 확인합니다.
-
-    ![기록 보기 창에는 사용자의 동의, 거부, 만료 기록이 나열됩니다.](./media/view-history-pane.png)
+5. **ID 거버넌스 | 사용 약관** 페이지에서 **테스트 사용 약관** 을 강조 표시하고 **선택한 감사 로그 보기** 를 선택하여 감사 로그 활동을 봅니다.
 
 #### <a name="task-4---what-terms-of-use-looks-like-for-users"></a>작업 4 - 사용자에게 표시되는 사용 약관
 
@@ -189,7 +185,7 @@ Azure AD 사용 약관 정책은 조직이 최종 사용자에게 정보를 제�
 
 1. [https://myapps.microsoft.com](https://myapps.microsoft.com/)으로 이동하여 사용자 계정으로 로그인합니다.
 
-2. 개요 페이지에서 설정 및 개인 정보 보기를 선택합니다.
+2. 사용자 프로필 사진을 선택한 다음, **계정 보기** 를 선택합니다. 개요 페이지에서 설정 및 개인 정보 보기를 선택합니다.
 
     ![“설정 및 개인 정보 보기”를 표시하는 팝업 화면 이미지](./media/lp4-mod1-myaccount-setting-and-privacy.png)
 

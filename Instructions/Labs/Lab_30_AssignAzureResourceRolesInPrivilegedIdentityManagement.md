@@ -3,12 +3,12 @@ lab:
   title: 선택 사항 30 - Privileged Identity Management에서 Azure 리소스 역할 할당
   learning path: "04"
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: ee85cbac686207499a2cb08c24a645f0e89a60b4
-ms.sourcegitcommit: 9b012e1ac4c54de05b1071142dd5a8e418133c0f
+ms.openlocfilehash: 3baeb4982316d86e2717ca5c1f8cb8079c423585
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138476445"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368740"
 ---
 # <a name="lab-30---optional-assign-azure-resource-roles-in-privileged-identity-management"></a>랩 30 - 선택 사항: Privileged Identity Management에서 Azure 리소스 역할 할당
 
@@ -49,7 +49,7 @@ Azure AD(Azure Active Directory) PIM(Privileged Identity Management)는 사용�
 
 7. 온보딩이 완료되면 Azure 리소스 – 검색 블레이드를 닫습니다.
 
-8. Azure 리소스 블레이드에서 방금 추가한 리소스를 선택합니다.
+8. Azure 리소스 블레이드에서 구독을 선택합니다.
 
     ![최근에 추가된 Azure 리소스를 표시하는 화면 이미지](./media/lp4-mod3-pim-az-resource-overview.png)
 
@@ -85,7 +85,7 @@ Azure AD(Azure Active Directory) PIM(Privileged Identity Management)는 사용�
 
 2. **Azure 리소스** 를 선택합니다.
 
-3. 관리하려는 리소스를 선택하여 개요 페이지를 엽니다.
+3. 관리하려는 구독을 선택하여 개요 페이지를 엽니다.
 
 4. **관리** 에서 **할당** 을 선택합니다.
 

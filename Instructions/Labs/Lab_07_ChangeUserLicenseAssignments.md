@@ -3,12 +3,12 @@ lab:
   title: 07 - 사용자 계정 라이선스 할당 변경
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 5926db4909933fe31574632ff625a45717bfa9ee
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: ec8653774b6dce9624e517c939d6a783bae58390
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421374"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368734"
 ---
 # <a name="lab-07-change-user-account-license-assignments"></a>랩 07: 사용자 계정 라이선스 할당 변경
 
@@ -34,7 +34,7 @@ ms.locfileid: "138421374"
     **경고** - 라이선스를 할당하려는 사용자에게는 사용 위치가 할당되어 있어야 합니다.
 
 6. 왼쪽 메뉴에서 **라이선스** 메뉴를 클릭합니다.
-7. "라이선스 할당을 찾을 수 없습니다."라는 메시지가 표시되는지 확인합니다.
+7. Raul에게 “라이선스 할당을 찾을 수 없습니다.”라는 메시지가 표시되는지 확인합니다.
 
 #### <a name="task-2---update-user-license-assignments"></a>작업 2 - 사용자 라이선스 할당 업데이트
 
@@ -48,7 +48,7 @@ ms.locfileid: "138421374"
 
 5. **+ 할당** 단추를 선택합니다. 
 
-6. 라이선스 할당 업데이트 블레이드에서 **Windows 10 Enterprise E3** 라이선스의 체크박스를 선택합니다.
+6. 라이선스 할당 업데이트 블레이드에서 **Windows 10/11 Enterprise E3** 라이선스의 확인란을 선택합니다.
 
     ![라이선스 할당 업데이트 페이지와 강조 표시된 라이선스 옵션을 보여주는 화면 이미지](./media/lp1-mod2-assign-user-license-options.png)
 
