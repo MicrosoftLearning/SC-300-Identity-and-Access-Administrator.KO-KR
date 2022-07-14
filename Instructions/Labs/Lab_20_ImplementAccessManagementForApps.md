@@ -3,12 +3,12 @@ lab:
   title: 20 - 앱을 위한 액세스 관리 구현
   learning path: "03"
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: aec13b1f1279cb8ca17885306ef97e20e337a97d
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: f8d53310a4d18df9e7ec184b0507024f207eaadd
+ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421386"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "146741388"
 ---
 # <a name="lab-20---implement-access-management-for-apps"></a>랩 20 - 앱을 위한 액세스 관리 구현
 
@@ -26,34 +26,35 @@ ms.locfileid: "138421386"
 
 2. 포털 메뉴를 열고 **Azure Active Directory** 를 선택합니다.
 
-3. Azure Active Directory 블레이드의 **관리** 에서 **엔터프라이즈 애플리케이션** 을 선택합니다.
+3. Azure Active Directory 페이지의 **관리** 에서 **엔터프라이즈 애플리케이션** 을 선택합니다.
 
 4. 엔터프라이즈 애플리케이션 창에서 **새 애플리케이션** 을 선택합니다.
 
-    ![새 애플리케이션이 강조 표시된 엔터프라이즈 애플리케이션 블레이드를 표시하는 화면 이미지](./media/lp3-mod1-new-enterprise-application.png)
+    ![새 애플리케이션이 강조 표시된 엔터프라이즈 애플리케이션 페이지를 표시하는 화면 이미지](./media/lp3-mod1-new-enterprise-application.png)
 
-5. Azure AD 갤러리 찾아보기(미리 보기) 블레이드의 **애플리케이션 검색** 상자에 **GitHub** 를 입력합니다.
+5. Azure AD 갤러리 찾아보기(미리 보기) 페이지의 **애플리케이션 검색** 상자에 **GitHub** 를 입력합니다.
 
-    ![검색 상자가 강조 표시된 Azure AD 갤러리 찾아보기(미리 보기) 블레이드를 표시하는 화면 이미지](./media/lp3-mod1-azure-ad-gallery-search.png)
+    ![검색 상자가 강조 표시된 Azure AD 갤러리 찾아보기(미리 보기) 페이지를 표시하는 화면 이미지](./media/lp3-mod1-azure-ad-gallery-search.png)
 
 6. 결과에서 **GitHub Enterprise Cloud – 엔터프라이즈 계정** 을 선택합니다.
 
 7. **GitHub Enterprise Cloud – 엔터프라이즈 계정** 에서 설정을 검토한 다음 **생성** 를 선택합니다.
 
-8. 계정이 만들어지면 GitHub Enterprise Cloud – 엔터프라이즈 계정 블레이드로 리디렉션됩니다.
+8. 계정이 만들어지면 GitHub Enterprise Cloud – 엔터프라이즈 계정 페이지로 리디렉션됩니다.
 
 #### <a name="task-2---assign-users-to-an-app"></a>작업 2 - 앱에 사용자 할당
 
-1. GitHub Enterprise Cloud – 엔터프라이즈 계정 블레이드의 개요 페이지에 있는 **시작하기** 에서 **1. 사용자 및 그룹 할당** 을 선택합니다.
+1. GitHub Enterprise Cloud – 엔터프라이즈 계정 페이지의 개요 페이지에 있는 **시작하기** 에서 **1을 선택합니다. 사용자 및 그룹 할당**
 
 2. 또는 왼쪽 탐색의 **관리** 에서 **사용자 및 그룹** 을 선택할 수 있습니다.
 
 3. 사용자 및 그룹 페이지의 메뉴에서 **+사용자/그룹 추가** 를 선택합니다.
 
-4. 할당 추가 블레이드에서 **사용자 및 그룹** 을 선택합니다.
+4. 할당 추가 페이지에서 **사용자 및 그룹** 을 선택합니다.
 
 5. 사용자 및 그룹 창에서 관리자 계정을 선택한 다음 **선택** 을 선택합니다.
 
     ![선택 단추가 강조 표시된 앱에 사용자 계정 할당을 추가하는 과정을 표시하는 화면 이미지 ](./media/lp3-mod1-add-app-assignment.png)
 
 6. **할당** 을 선택합니다.
+
