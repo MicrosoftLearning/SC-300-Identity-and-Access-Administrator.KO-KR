@@ -3,12 +3,12 @@ lab:
   title: 01 - 사용자 역할 관리
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: 2f0c349fe65316fd9a3166d81603b2b88af20a8f
-ms.sourcegitcommit: bc5c47a39782e94c249ec4bce01ba0da9249ec61
+ms.openlocfilehash: 9af8166d7b06f48ab62579c82dd6769a3bd89704
+ms.sourcegitcommit: 6a016964eb4dcdad3685cc303453389197cd8233
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146822635"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "147400405"
 ---
 # <a name="lab-01-manage-user-roles"></a>랩 01: 사용자 역할 관리
 
@@ -147,9 +147,21 @@ Azure AD(Azure Active Directory)를 사용하면 제한된 관리자가 권한�
 
     ![csv 파일 항목을 사용하여 대량 가져오기](./media/bulkimportexample.png)
 
-6. 변경 내용이 채워지면 저장하고 업로드하여 사용자를 추가합니다.
+    이 파일을 수정하여 사용자를 대량으로 추가할 수 있습니다.  모든 필드를 채울 필요는 없습니다.  제공된 샘플 데이터에 따라 주로 이름 및 사용자 이름 정보를 추가해야 합니다.
 
-7. 파일이 성공적으로 업로드되었다는 알림이 표시됩니다.  제출을 선택하여 사용자를 추가합니다. 
+6. 샘플 CSV가 Allfiles/Lab1 폴더(**SC300BulkUser.csv**)에 제공되었습니다.
+   1. 메모장을 엽니다.
+   2. SC300BulkUser.csv 파일 열기
+   3. **도메인 이름 입력** 을 Azure 랩 환경의 도메인으로 변경합니다.
+   4. 파일을 저장합니다.
+
+7. **사용자 대량 만들기** 대화 상자의 3단계에서 파일 폴더 아이콘을 선택합니다.
+
+8. Allfiles/Lab1 폴더의 경로를 선택하고 **SC300BulkUser.csv** 파일을 선택합니다.
+
+9. **열기** 를 선택합니다.
+
+7. 파일이 성공적으로 업로드되었다는 알림이 표시됩니다.  **제출** 을 선택하여 사용자를 추가합니다. 
 
 사용자를 만든 후에는 만들기가 성공했다는 메시지가 표시됩니다.  사용자 대량 만들기 타일을 닫으면 새 사용자가 **사용자 | 모든 사용자** 목록에 채워집니다. 
 
