@@ -3,12 +3,12 @@ lab:
   title: 17 - 클라우드용 Defender Apps 애플리케이션 검색 및 제한 적용
   learning path: "03"
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: d56b645457452aa3ab36a9a78ec668d270db150f
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
+ms.openlocfilehash: 2810d72197e31241d7a3c30d85b40cc5682be0bf
+ms.sourcegitcommit: fa8ae52be1e809ca81d07036fefeebffb54c1861
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741643"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "147521462"
 ---
 # <a name="lab-17---defender-for-cloud-apps-application-discovery-and-enforcing-restrictions"></a>랩 17 - 클라우드용 Defender Apps 애플리케이션 검색 및 제한 적용
 
@@ -28,7 +28,7 @@ ms.locfileid: "146741643"
 
 1. **추가 리소스** 창에서 **클라우드용 Microsoft Defender Apps** 아래에서 **열기** 를 찾아 선택합니다.  그러면 Microsoft 365 계정 내의 **클라우드용 Microsoft Defender Apps** 포털로 이동합니다.
 
-1. 왼쪽 메뉴에서 **검색** 드롭다운을 선택하고 **검색된 앱** 을 선택합니다.
+1. 왼쪽 메뉴에서 **검색** 드롭다운을 선택하고 **클라우드 앱 카탈로그** 을 선택합니다.
 
 1. **범주별로 찾아보기** 에서 **클라우드 스토리지** 를 선택합니다.
 
