@@ -3,16 +3,20 @@ lab:
   title: 07 - Azure AD Connect를 사용하여 하이브리드 ID 추가
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 9c612bb17543a7bc6535a5ba923f205999cfaa45
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
+ms.openlocfilehash: dfb0bbb4416be0984784f159833f1873dfa5ff0d
+ms.sourcegitcommit: 3125be5da88aa4b5fee51cf653c13bc9ee0bb799
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823195"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "147573428"
 ---
 # <a name="lab-07-add-hybrid-identity-with-azure-ad-connect"></a>랩 07: Azure AD Connect를 사용하여 하이브리드 ID 추가
 
 **참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
+
+**참고 2** - 이전에 Azure AD Connect를 사용한 적이 있는 경우, 이 랩을 선택 사항으로 처리해야 합니다.  이 랩에서는 스크립트를 사용하여 도메인 컨트롤러를 배포하고 구성하는 데 30분 이상의 설치 시간이 필요합니다.  랩을 수행하려는 경우, 스크립트를 시작하고 백그라운드에서 실행되는 동안 다른 작업을 수행하는 것이 좋습니다.
+
+
 
 ## <a name="lab-scenario"></a>랩 시나리오
 
