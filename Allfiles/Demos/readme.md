@@ -1,1 +1,1 @@
-Use this folder to store any supplemental demo files needed to support demos in this course.
+이 폴더에 본 과정의 데모를 지원하는 데 필요한 추가 데모 파일을 저장하세요.
