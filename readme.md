@@ -1,6 +1,6 @@
 # <a name="sc-300-identity-and-access-administrator"></a>SC-300: ID 및 액세스 관리자
 
-- **[랩 링크(HTML 형식)](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator,ko-kr/)**
+- **[랩 링크(HTML 형식)](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator.ko-kr/)**
 - **MCT이신가요?** - [MCT를 위한 GitHub 사용자 가이드](https://microsoftlearning.github.io/MCT-User-Guide/)를 살펴보세요.
 - **랩 지침을 수동으로 빌드해야 하나요?** - 지침은 [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) 리포지토리에서 확인할 수 있습니다.
 
