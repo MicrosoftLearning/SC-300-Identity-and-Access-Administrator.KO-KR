@@ -147,10 +147,6 @@ lab:
 
 1. 이런 각 사용자는 액세스가 거부됩니다.
 
-
-
-
-
 ### 선택적 연습 2 - Azure AD를 사용하여 Azure에서 Linux Virtual Machines에 로그인
 
 #### 작업 1 - 시스템 할당 관리 ID를 사용하여 Linux VM 만들기
