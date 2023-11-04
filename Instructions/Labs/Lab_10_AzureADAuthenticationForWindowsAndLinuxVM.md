@@ -42,6 +42,8 @@ lab:
 
 1. [https://portal.azure.com](https://portal.azure.com)에서 **가상 머신**으로 이동합니다.
 
+1. 작업 1에서 새로 만든 Virtual Machine을 선택합니다.
+
 1. **액세스 제어(IAM)** 를 선택합니다.
 
 1. **+ 추가**를 선택한 다음, **역할 할당 추가**를 선택하여 역할 할당 추가 페이지를 엽니다.
