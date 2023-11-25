@@ -33,7 +33,7 @@ lab:
 
 4. 상단 메뉴에서 **+새 카탈로그**를 선택합니다.
 
-    ![새 카탈로그 메뉴가 강조 표시된 ID 거버넌스 카탈로그 페이지를 표시하는 화면 이미지  ](./media/lp4-mod1-identity-governance-new-catalog.png)
+    ![새 카탈로그 메뉴가 강조 표시된 ID 거버넌스 카탈로그 페이지를 표시하는 화면 이미지 ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
 5. 새 카탈로그 창의 **이름** 상자에 **마케팅**을 입력합니다.
 
