@@ -15,19 +15,19 @@ lab:
 
 애플리케이션을 등록하면 앱과 Microsoft ID 플랫폼 간에 신뢰 관계가 설정됩니다. 트러스트는 단방향입니다. 앱이 Microsoft ID 플랫폼을 신뢰하지만 Microsoft ID 플랫폼이 앱을 신뢰하는 것은 아닙니다.
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com](https://portal.azure.com)  에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2. 포털 메뉴를 열고 **Azure Active Directory**를 선택합니다.
+2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
 
-3. **Azure Active Directory** 블레이드의 **관리**에서 **앱 등록**을 선택합니다.
+3. **ID 메뉴**의 **애플리케이션**에서 **앱 등록**을 선택합니다.
 
 4. **앱 등록** 페이지의 메뉴에서 **새 등록**을 선택합니다.
 
 5. **애플리케이션 등록** 블레이드에서 기본값을 사용하여 **Demo app**이라는 앱을 등록합니다. 리디렉션 URI를 입력할 필요가 없습니다.
 
-    ![이름과 기본 설정이 강조 표시된 애플리케이션 등록 블레이드를 보여주는 화면 이미지](./media/lp3-mod3-register-an-application.png)
+    ![이름 및 기본 설정이 강조 표시된 애플리케이션 등록 페이지를 표시하는 화면 이미지](./media/lp3-mod3-register-an-application.png)
 
-6. 완료되면 **Demo app** 블레이드로 이동됩니다.
+6. 완료되면 데모 앱** 페이지로 이동**됩니다.
 
 
 #### 작업 2 - 플랫폼 설정 구성
@@ -36,10 +36,9 @@ lab:
 
 대상으로 하는 플랫폼 또는 디바이스에 따라 애플리케이션 설정을 구성하려면 다음을 수행합니다.
 
+플랫폼 설정을 구성하여 등록된 애플리케이션에 대한 리디렉션 URI를 추가하고 수정합니다.
 
-1. 플랫폼 설정을 구성하여 등록된 애플리케이션에 대한 리디렉션 URI를 추가하고 수정합니다.
-
-1. Azure Portal의 **앱 등록**에서 애플리케이션을 선택합니다.
+1. Microsoft Entra 관리 센터에서 앱 등록 ** 애플리케이션**을 선택합니다.
 
 2.  **관리**에서 **인증**을 선택합니다.
 
@@ -67,11 +66,10 @@ lab:
 
 ![앱 등록 시 인증서 및 암호 창을 보여주는 Azure Portal 스크린샷](./media/portal-05-app-reg-04-credentials.png)
 
+    **Note**: Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: .cer, .pem, .crt.
 
->**참고**: 공개 키라고도 하는 인증서는 클라이언트 암호보다 더 높은 수준의 보안을 제공하기 때문에, 이 자격 증명 유형을 권장합니다. ** 신뢰할 수 있는 공용 인증서를 사용하는 경우 인증서 및 암호 기능을 추가할 수 있습니다. 인증서는 .cer, .pem, .crt 파일 형식 중 하나여야 합니다.
 
-
->**참고**: 애플리케이션 암호라고도 하는 클라이언트 암호는 앱에서 ID 자체에 대한 인증서 대신 사용할 수 있는 문자열 값입니다. ** 이 암호가 두 가지 자격 증명 형식 중 사용하기 더 쉽습니다. 개발 중에 자주 사용되지만 인증서보다 안전하지 않은 것으로 간주됩니다. 인증서는 프로덕션 환경에서 실행되는 애플리케이션에서 사용해야 합니다.
+    **Note**: The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
 1. Azure Portal의 **앱 등록** 에서 애플리케이션을 선택합니다.
 
@@ -85,9 +83,9 @@ lab:
 
 6. 클라이언트 애플리케이션 코드에서 사용할 **비밀 값을 메모장에 저장** 합니다. 인증서 및 비밀 페이지에 새 비밀 값이 표시됩니다. 이 값은 한 번만 표시되므로 복사하는 것이 중요합니다. 페이지를 새로 고치고 돌아오면 마스킹된 값으로만 표시됩니다.
 
-1.  **리디렉션 URI 추가** 및 **플랫폼 설정 구성** 섹션을 건너뜁니다. 사용자가 대화형으로 로그인하지 않으므로 웹 API의 리디렉션 URI를 구성할 필요가 없습니다.
+7.  **리디렉션 URI 추가** 및 **플랫폼 설정 구성** 섹션을 건너뜁니다. 사용자가 대화형으로 로그인하지 않으므로 웹 API의 리디렉션 URI를 구성할 필요가 없습니다.
 
-1. 지금은 **자격 증명 추가** 섹션을 건너뜁니다. API가 다운스트림 API에 액세스하는 경우에만 자체 자격 증명이 필요하며, 이 내용은 이 문서에서 다루지 않는 시나리오입니다.
+8. 지금은 **자격 증명 추가** 섹션을 건너뜁니다. API가 다운스트림 API에 액세스하는 경우에만 자체 자격 증명이 필요하며, 이 내용은 이 문서에서 다루지 않는 시나리오입니다.
 
 웹 API가 등록되면 API의 코드에서 API 소비자에게 세부적인 사용 권한을 제공하는 데 사용할 수 있는 범위를 추가할 수 준비가 완료된 것입니다.
 
@@ -98,11 +96,11 @@ lab:
 
 먼저 다음 단계를 수행하여 Employees.Read.All이라는 예제 범위를 생성합니다.
 
-1. Azure Portal에 로그인합니다.
+1. Microsoft Entra 관리 센터에 로그인합니다.
 
 2. 여러 테넌트에 액세스할 수 있는 경우 위쪽 메뉴의 **디렉터리 + 구독** 필터를 사용하여 클라이언트 앱의 등록이 포함된 테넌트를 선택합니다.
 
-3.  **Azure Active Directory** > **앱 등록**을 차례로 선택한 다음, API의 앱 등록을 선택합니다.
+3. ID **를 선택한**다음 **애플리케이션** 을 선택하고 마지막으로 앱 등록 **** API의 앱 등록을 선택합니다.
 
 4.  **API 표시**를 선택한 다음, **+ 범위 추가**를 선택합니다.
 
@@ -156,14 +154,11 @@ lab:
 
     이미지에 표시된 것처럼 범위의 전체 문자열은 웹 API의 **애플리케이션 ID URI** 와 범위의 **범위 이름**을 연결한 것입니다.
 
-1. URI 끝에 “/Employees.Read.All”이 추가된 **애플리케이션 ID URI**를 사용하여 API를 테스트합니다.
-
-    >**참고**: 예를 들어 웹 API의 애플리케이션 ID URI가 `https://contoso.com/api` 이고 범위 이름이 Employees.Read.All이면 전체 범위는 `https://contoso.com/api/Employees.Read.All`입니다.
+        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
 
 
-    >**참고**: 다음으로, 위 단계를 수행하여 정의한 웹 API에 대한 액세스 권한과 정의한 범위를 사용하여 클라이언트 앱의 등록을 구성합니다.
-    클라이언트 앱 등록에 웹 API에 대한 액세스 권한이 부여되면 클라이언트에서 Microsoft ID 플랫폼을 통해 OAuth 2.0 액세스 토큰을 발급할 수 있습니다. 클라이언트는 웹 API를 호출할 때, 클라이언트의 앱 등록에 지정된 권한으로 범위(scp) 클레임이 설정된 액세스 토큰을 제공합니다.
-    추가 범위를 나중에 필요한 대로 노출할 수 있습니다. 웹 API는 여러 작업에 연결된 여러 범위를 공개할 수 있습니다. 리소스는 수신하는 OAuth 2.0 액세스 토큰의 범위(scp) 클레임을 평가하여 런타임에 웹 API에 대한 액세스를 제어할 수 있습니다.
+        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+    클라이언트 앱 등록에 웹 API에 대한 액세스 권한이 부여되면 클라이언트에서 Microsoft ID 플랫폼을 통해 OAuth 2.0 액세스 토큰을 발급할 수 있습니다. 클라이언트는 웹 API를 호출할 때, 클라이언트의 앱 등록에 지정된 권한으로 범위(scp) 클레임이 설정된 액세스 토큰을 제공합니다. 추가 범위를 나중에 필요한 대로 노출할 수 있습니다. 웹 API는 여러 작업에 연결된 여러 범위를 공개할 수 있습니다. 리소스는 수신하는 OAuth 2.0 액세스 토큰의 범위(scp) 클레임을 평가하여 런타임에 웹 API에 대한 액세스를 제어할 수 있습니다.
 
 
 ### 연습 2 - 사용자 지정 역할로 앱 등록 관리
@@ -172,17 +167,17 @@ lab:
 
 앱 관리를 위한 새로운 사용자 지정 역할을 만들어야 합니다. 이 새로운 역할은 자격 증명 관리를 수행하는 데 필요한 특정 권한에만 제한되어야 합니다.
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com](https://portal.azure.com)  에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2. 포털 메뉴를 열고 **Azure Active Directory**를 선택합니다.
+2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
 
-3. Azure Active Directory 블레이드의 **관리**에서 **역할 및 관리자**를 선택합니다.
+3. 왼쪽 메뉴의 ID**에서 **역할 및 관리자를** 선택합니다**.
 
-4. 역할 및 관리자 블레이드의 메뉴에서 **+새 사용자 지정 역할**을 선택합니다.
+4. **그런 다음, 역할 및 관리자** 항목을 선택한 다음+ 새 사용자 지정 역할을** 선택합니다**.
 
     ![새 사용자 지정 역할 메뉴 옵션이 강조 표시된 역할 및 관리자 블레이드를 표시하는 화면 이미지](./media/lp3-mod1-new-custom-role.png)
 
-5. 새 사용자 지정 역할 블레이드의 기본 정보탭에 있는 이름 상자에 **내 사용자 지정 앱 역할**을 입력합니다.
+5. 새 사용자 지정 역할 대화 상자의 기본 사항 탭에 있는 이름 상자에 내 사용자 지정 앱 역할을** 입력**합니다.
 
 6. 나머지 옵션을 검토하고 **다음**을 선택합니다.
 

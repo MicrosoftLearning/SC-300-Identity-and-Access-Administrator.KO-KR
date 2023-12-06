@@ -1,33 +1,33 @@
 ---
 lab:
-  title: 26 - Azure AD 역할에 대한 Privileged Identity Management 구성
+  title: 26 - Microsoft Entra 역할에 대한 Privileged Identity Management 구성
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 랩 26: Azure AD 역할에 대한 Privileged Identity Management 구성
+# 랩 26: Microsoft Entra 역할에 대한 Privileged Identity Management 구성
 
 ## 랩 시나리오
 
-권한 있는 역할 관리자는 적격 역할 할당을 활성화한 사용자의 환경을 변경하는 등, 해당 Azure Active Directory(Azure AD) 조직에서 PIM(Privileged Identity Management)을 사용자 지정할 수 있습니다. PIM을 구성하는 데 익숙해져야 합니다.
+권한 있는 역할 관리자는 적격 역할 할당을 활성화하는 사용자의 환경 변경을 포함하여 Microsoft Entra 조직에서 PIM(Privileged Identity Management)을 사용자 지정할 수 있습니다. PIM을 구성하는 데 익숙해져야 합니다.
 
 #### 예상 소요 시간: 30분
 
-### 연습 1 - Azure AD 역할 설정 구성
+### 연습 1 - Microsoft Entra 역할 설정 구성
 
 #### 작업 1 - 역할 설정 열기
 
-다음 단계에 따라 Azure AD 역할에 대한 설정을 엽니다.
+다음 단계에 따라 Microsoft Entra 역할에 대한 설정을 엽니다.
 
-1. 전역 관리자로 [https://portal.azure.com](https://portal.azure.com)  에 로그인합니다.
+1. 전역 관리자로 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2. 검색한 다음 **Azure AD Privileged Identity Management**를 선택합니다.
+2. Privileged Identity Management를 검색한 다음 선택합니다 **.**
 
-3. 왼쪽 탐색 영역에서 Privileged Identity Management 페이지의 **Azure AD 역할**을 선택합니다.
+3. Privileged Identity Management 페이지의 왼쪽 탐색 영역에서 Microsoft Entra 역할을 선택합니다 **.**
 
 4. 빠른 시작 페이지의 왼쪽 탐색 영역에서 **설정**을 선택합니다.
 
-    ![설정 메뉴가 강조 표시된 Azure AD 역할 페이지를 표시하는 화면 이미지](./media/lp3-mod3-pim-ad-roles-settings.png)
+    ![설정 메뉴가 강조 표시된 Microsoft Entra 역할 페이지를 표시하는 화면 이미지](./media/lp3-mod3-pim-ad-roles-settings.png)
 
 5. 역할 목록을 검토한 다음 **역할 이름으로 검색**에서 **준수**를 입력합니다.
 
@@ -53,27 +53,29 @@ lab:
 
 5. 역할 설정을 구성하면, **업데이트**를 선택해 변경 사항을 저장합니다.
 
-### 연습 2 - Azure AD 역할을 사용하는 PIM
+### 연습 2 - Microsoft Entra 역할을 사용하는 PIM
 
 #### 작업 1 - 역할 할당
 
-전역 관리자는 Azure AD(Azure Active Directory)를 사용하여 영구 Azure AD 관리자 역할 할당을 만들 수 있습니다. 이러한 역할은 Azure Portal 또는 PowerShell 명령을 사용하여 할당할 수 있습니다.
+Microsoft Entra ID를 사용하면 전역 관리자가 영구적인 Microsoft Entra 관리자 역할을 할당할 수 있습니다. 이러한 역할 할당은 Microsoft Entra 관리 센터, Azure Portal 또는 PowerShell 명령을 사용하여 만들 수 있습니다.
 
-Azure AD PIM(Privileged Identity Management) 서비스를 사용하여 권한 있는 역할 관리자는 영구 디렉터리 역할을 할당할 수도 있습니다. 또한 권한이 있는 역할 관리자는 사용자의 Azure AD 관리자 역할을 적격으로 만들 수 있습니다. 적격인 관리자는 필요할 때 역할을 활성화할 수 있으며 작업을 완료하고 나면 권한이 만료됩니다.
+PIM(Privileged Identity Management) 서비스를 사용하면 권한 있는 역할 관리자가 영구 관리자 역할 할당을 수행할 수도 있습니다. 또한 권한이 있는 역할 관리자는 사용자의 Microsoft Entra 관리자 역할을 적격으로 만들 수 있습니다. 적격인 관리자는 필요할 때 역할을 활성화할 수 있으며 작업을 완료하고 나면 권한이 만료됩니다.
 
-사용자를 Azure AD 관리자 역할에 대해 적격 사용자로 지정하려면 다음 단계를 따릅니다.
+다음 단계에 따라 사용자가 Microsoft Entra 관리자 역할을 받을 수 있도록 합니다.
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com](https://portal.azure.com)에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)에 로그인합니다.
 
-2. 검색한 다음 **Azure AD Privileged Identity Management**를 선택합니다.
+2. Privileged Identity Management를 검색한 다음 선택합니다 **.**
 
-3. 왼쪽 탐색 영역에서 Privileged Identity Management 페이지의 **Azure AD 역할**을 선택합니다.
+    **참고** - ID - ID 거버넌스 - Privileged Identity Management의 메뉴에서 찾을 수 있습니다.
+
+3. Privileged Identity Management 페이지의 왼쪽 탐색 영역에서 Microsoft Entra 역할을 선택합니다 **.**
 
 4. 빠른 시작 페이지의 왼쪽 탐색 영역에서 **역할**을 선택합니다.
 
 5. 상단 메뉴에서 + **할당 추가**를 선택합니다.
 
-    ![할당 추가 메뉴가 강조 표시된 Azure AD 역할을 표시하는 화면 이미지](./media/lp4-mod3-pim-assign-role.png)
+    ![할당 추가 메뉴가 강조 표시된 Microsoft Entra 역할을 표시하는 화면 이미지](./media/lp4-mod3-pim-assign-role.png)
 
 6. 할당 추가 페이지의 **멤버 자격** 탭에서 설정을 검토합니다.
 
@@ -99,31 +101,30 @@ Azure AD PIM(Privileged Identity Management) 서비스를 사용하여 권한 �
 #### 작업 2 - Miriam으로 로그인
 
 1. 새 InPrivate 브라우저 창을 엽니다.
-2. Azure Portal에 연결(https://portal.azure.com).
-3. 사용자가 로그인된 상태로 Azure Portal이 열리면 오른쪽 위에서 해당 사용자 이름을 선택하고 **다른 계정으로 로그인**을 선택합니다.
-4. Miriam으로 로그인합니다.
+2. Microsoft Entra 관리 센터로 커넥트(https://entra.microsoft.com).
+    **참고** - 로그인한 사용자와 함께 열리는 경우 오른쪽 위 모서리에서 해당 이름을 선택하고 다른 계정**으로 로그인을 선택합니다**.
+3. Miriam으로 로그인합니다.
 
    | 필드 | 값 |
    | :--- | :--- |
    | 사용자 이름 | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
    | 암호 |  테넌트의 관리자 암호를 입력합니다(테넌트 관리자 암호를 검색하려면 랩 리소스 탭 참조). |
 
-5. **Azure를 시작합니다!** 대화 상자를 닫습니다.
-6. **리소스, 서비스, 문서 검색** 창에서 Azure Active Directory를 검색하여 해당 페이지를 엽니다.
-7. **개요** 페이지에서 **내 피드**를 찾습니다.
-8. Miriam Graham의 이름 아래에서 **프로필 보기**를 선택합니다. 그러면 Miriam의 프로필 페이지가 열립니다.
-9. **할당된 역할**, **적격 할당**을 차례로 선택합니다.
-10. 현재 Miriam에게는 **준수 관리자** 역할을 할당할 수 있습니다.
+4. **ID** 메뉴에서 사용자를** 연 **다음 모든 사용자를** 선택합니다**.
+5. 사용자 목록에서 Miriam** 찾기 **
+6. **개요** 페이지에서 할당된 역할을 찾**습니다**.
+7. 적격 할당을** 선택합니다**.
+1. 현재 Miriam에게는 **준수 관리자** 역할을 할당할 수 있습니다.
 
-#### 작업 3 - 내 Azure AD 역할 활성화
+#### 작업 3 - Microsoft Entra 역할 활성화
 
-Azure AD 역할을 가정해야 하는 경우 Privileged Identity Management에서 **내 역할**을 열어 활성화를 요청할 수 있습니다.
+Microsoft Entra 역할을 가정해야 하는 경우 Privileged Identity Management에서 내 역할을** 열어 **활성화를 요청할 수 있습니다.
 
 1. **리소스, 서비스 및 문서 검색** 창에서 Privileged를 검색합니다.
-2. **Azure AD Privileged Identity Management** 페이지를 엽니다.
+2. **Privileged Identity Management** 페이지를 엽니다.
 3. 왼쪽 탐색 메뉴에서 Privileged Identity Management 페이지의 **내 역할**을 선택합니다.
 
-4. 내 역할 페이지에서 적격 할당 목록을 검토합니다.
+4. 내 역할 페이지에서 적격 할당 목록을 **검토합니다**.
 
     ![적격 역할 할당이 강조 표시된 내 역할을 표시하는 화면 이미지](./media/lp4-mod3-my-roles.png)
 
@@ -145,8 +146,8 @@ Azure AD 역할을 가정해야 하는 경우 Privileged Identity Management에�
 
 특정 역할의 경우 부여된 사용 권한의 범위는 단일 관리 단위, 서비스 주체 또는 애플리케이션으로 제한될 수 있습니다. 이 절차는 관리 단위의 범위를 포함하는 역할을 할당하는 경우의 예입니다.
 
-1. MiriamG로 로그인된 브라우저 창을 닫고 관리자 계정으로 Azure Portal을 열어야 합니다.
-2. Privileged Identity Management 페이지로 이동하여 왼쪽 탐색 메뉴에서 Azure **Azure AD 역할**을 선택합니다.
+1. MiriamG에 대한 브라우저 창을 닫은 다음 관리자 계정으로 Microsoft Entra 관리 센터를 열어야 합니다.
+2. Privileged Identity Management 페이지로 이동하고 왼쪽 탐색 메뉴에서 Azure **Microsoft Entra 역할을 선택합니다.**
 3. **역할**을 선택합니다.
 4. 역할 페이지의 상단 메뉴에서 **+ 할당 추가**를 선택합니다.
 
@@ -162,7 +163,7 @@ Azure AD 역할을 가정해야 하는 경우 Privileged Identity Management에�
 
 기존 역할 할당을 업데이트하거나 제거하려면 다음 단계를 수행합니다.
 
-1. 왼쪽 탐색 영역에 있는 Open Azure AD Privileged Identity Management의 Azure AD 역할 페이지에서 **할당**을 선택합니다.
+1. Open Privileged Identity Management > Microsoft Entra 역할 페이지의 왼쪽 탐색 영역에서 할당을** 선택합니다**.
 
 2. 준수 관리자는 **할당** 목록에서 **작업** 열의 옵션을 검토합니다.
 

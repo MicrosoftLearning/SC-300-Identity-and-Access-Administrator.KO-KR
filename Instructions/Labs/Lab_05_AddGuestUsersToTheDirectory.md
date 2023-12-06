@@ -17,23 +17,26 @@ lab:
 
 #### 작업 - 게스트 사용자 추가
 
-1. 제한된 관리자 디렉터리 역할 또는 게스트 초대자 역할에 할당된 사용자로  [https://portal.azure.com](https://portal.azure.com)  에 로그인합니다.
+1.  [ ](https://entra.microsoft.com)https://entra.Microsoft.com제한된 관리자 디렉터리 역할 또는 게스트 초대자 역할이 할당된 사용자로 로그인하거나 전역 관리istrator로 로그인합니다.
 
-2.  **Azure Active Directory**를 선택합니다.
+2. ID를 ** 선택합니다**.
 
-3.  **관리**에서 **사용자**를 선택합니다.
+3. 사용자 ** 아래에서**모든 사용자를 ** 선택합니다**.
 
 4.  **+ 새 사용자**를 선택합니다.
 
 5. 새 사용자 메뉴에서 **외부 사용자 초대**를 선택하고 자신의 정보를 게스트 사용자 정보로 추가합니다.
 
-    **참고** - 그룹 메일 주소는 지원되지 않습니다. 개인용 메일 주소를 입력하세요. 또한 일부 이메일 공급 기업에서는 수신함 필터링 등을 지원하기 위해 사용자가 이메일 주소에 더하기 기호(+) 및 추가 텍스트를 추가하는 것을 허용합니다. 그러나 Azure AD는 현재 메일 주소에서 더하기 기호를 지원하지 않습니다. 배달 문제를 방지하려면 @ 기호 뒤에 오는 모든 문자 및 더하기 기호를 생략합니다.
+    **참고** - 그룹 메일 주소는 지원되지 않습니다. 개인용 메일 주소를 입력하세요. 또한 일부 이메일 공급 기업에서는 수신함 필터링 등을 지원하기 위해 사용자가 이메일 주소에 더하기 기호(+) 및 추가 텍스트를 추가하는 것을 허용합니다. 그러나 Microsoft Entra ID는 현재 메일 주소에서 더하기 기호를 지원하지 않습니다. 배달 문제를 방지하려면 @ 기호 뒤에 오는 모든 문자 및 더하기 기호를 생략합니다.
 
 6. 메일 주소(예: **sc300externaluser1@sc300email.com** )를 입력합니다.
 
-7. 완료되면 **초대**를 선택합니다.
+7. **속성** 탭을 선택합니다.
 
 8. 사용자 페이지에서 내 계정이 나열되어 있는지 확인하고 **사용자 유형** 열에서 **게스트**가 표시되는지 확인합니다.
+
+9. 완료되면 검토 + 초대를 선택한 **다음 초대를 선택합니다****.**
+
 
 초대를 발송한 후 사용자 계정이 디렉터리에 게스트로 자동 추가됩니다.
 
@@ -44,11 +47,11 @@ lab:
 
 최근에 다른 회사와의 파트너십이 체결되었습니다. 일단은 파트너 회사의 직원들이 게스트로 추가될 것입니다. 여러 게스트 사용자를 한 번에 가져올 수 있는지 확인해야 합니다.
 
-1. 전역 관리자로 [https://portal.azure.com](https://portal.azure.com)에 로그인합니다.
+1. 전역 관리자로 [https://entra.microsoft.com](https://entra.microsoft.com)에 로그인합니다.
 
-2. 탐색 창에서 **Azure Active Directory**를 선택합니다.
+2. 탐색 창에서 **ID**를 선택합니다.
 
-3. **관리**에서 **사용자**를 선택합니다.
+3. 사용자** 아래에서 **모든 사용자를** 선택합니다**.
 
 4. 사용자 페이지의 메뉴에서 **대량 작업 > 대량 초대**를 선택합니다.
 
@@ -85,38 +88,46 @@ lab:
 
 #### 작업 2 - PowerShell을 사용하여 게스트 사용자 초대
 
-1. 관리자 권한으로 PowerShell을 엽니다.  이 작업은 Windows에서 PowerShell을 검색하고 관리자 권한으로 실행을 선택하여 수행할 수 있습니다.  
+1. 관리자 권한으로 PowerShell을 엽니다.이 작업은 Windows에서 PowerShell을 검색하고 관리자 권한으로 실행을 선택하여 수행할 수 있습니다. 
 
-1. 이전에 사용하지 않은 경우 Azure AD PowerShell 모듈을 추가해야 합니다.  명령 실행: Install-Module AzureAD.  계속할지 묻는 메시지가 표시되면 “Y”를 선택하여 계속합니다.
+**참고** - 이 랩이 작동하려면 PowerShell 버전 7.2 이상이 있어야 합니다.  PowerShell이 열리면 화면 맨 위에 버전이 표시됩니다. 실행 중인 경우 이전 버전인 경우 화면의 지침에 따라 이동합니다 https://aka.ms/PowerShell-Release?tag=7.3.9. 자산 섹션까지 아래로 스크롤하고 powershell-7.3.1-win-x64.msi를 선택합니다. 다운로드가 완료되면 파일 열기를 선택합니다. 모든 기본값을 사용하여 설치합니다.
 
-    ``` 
-    Install-Module AzureAD
-    ```
-
-1. 다음 명령을 실행하여 모듈이 올바르게 설치되었는지 확인합니다.  
+2. 이전에 사용하지 않은 경우 Microsoft.Graph PowerShell 모듈을 설치해야 합니다.  다음 두 명령을 실행하고 확인하라는 메시지가 표시되면 Y 키를 누릅니다.
 
     ```
-    Get-Module AzureAD 
+    Install-Module Microsoft.Graph
     ```
-
-1. 다음으로, 다음을 실행하여 Azure에 로그인해야 합니다.  
+3. Microsoft.Graph 모듈이 설치되어 있는지 확인합니다.
 
     ```
-    Connect-AzureAD
+    Get-InstalledModule Microsoft.Graph
     ```
     
-1. Azure AD에 로그인할 수 있는 Microsoft 로그인 창이 나타납니다.  
 
-1. 연결되어 있는지 확인하고 기존 사용자를 보려면 다음을 실행합니다.  
-
-    ```
-    Get-AzureADUser 
-    ```
-
-1. 게스트 사용자를 초대할 준비가 된 것입니다.  다음 명령은 사용자 정보로 채워지고 실행됩니다.  추가할 사용자가 두 명 이상인 경우 메모장 txt 파일을 사용하여 사용자 정보를 추가하고 PowerShell에 복사/붙여넣을 수 있습니다. 
+4. 다음으로, 다음을 실행하여 Azure에 로그인해야 합니다.  
 
     ```
-    New-AzureADMSInvitation -InvitedUserDisplayName "Display" -InvitedUserEmailAddress name@emaildomain.com -InviteRedirectURL https://myapps.microsoft.com -SendInvitationMessage $true 
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
+    ``` 
+    Edge 브라우저가 열리고 로그인하라는 메시지가 표시됩니다.  MOD 관리istrator 계정을 사용하여 연결합니다.  권한 요청을 승인합니다. 브라우저 창을 닫습니다.
+
+5. 외부 사용자에 대한 전자 메일 및 리디렉션에 대한 값을 설정합니다.
+
+    ```
+    Import-Module Microsoft.Graph.Identity.SignIns
+    
+    $params = @{
+        invitedUserEmailAddress = "admin@fabrikam.com"
+        inviteRedirectUrl = "https://myapp.contoso.com"
+    }
     ```
 
-이제 Azure AD 포털, Microsoft 365 관리 센터 내에서 사용자를 초대하고, csv 파일을 사용하여 대량 초대를 수행하고, PowerShell 명령을 사용하여 사용자를 초대하는 방법을 알아보았습니다.
+6. 외부 사용자를 초대하기 위해 MgInvitation 명령을 보냈습니다.
+
+    ```
+    New-MgInvitation -BodyParameter $params
+    ```
+
+7. 이 시점에서 PowerShell을 닫을 수 있습니다.
+    
+이제 Microsoft Entra 관리 센터, Microsoft 365 관리 센터 내에서 사용자를 초대하고, csv 파일을 사용하여 대량 초대를 하고, PowerShell 명령을 사용하여 사용자를 초대하는 방법을 알아보았습니다.  Microsoft Entra 관리 센터로 이동하여 모든 사용자를 검사 ADMIN이 외부 suer로 추가되었는지 확인할 수 있습니다.

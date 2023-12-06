@@ -1,15 +1,15 @@
 ---
 lab:
-  title: 15 - Azure AD 다단계 인증 등록 정책 구성
+  title: 15 - 다단계 인증 등록 정책 구성
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# 랩 15 - Azure AD 다단계 인증 등록 정책 구성
+# 랩 15 - 다단계 인증 등록 정책 구성
 
 ## 랩 시나리오
 
-Azure AD Multi-Factor Authentication은 사용자 이름과 암호 이외에 추가 기능을 사용하는 사용자를 확인하는 수단을 제공합니다. MFA는 사용자 로그인에 두 번째 보안 계층을 제공합니다. 사용자가 MFA 프롬프트에 응답할 수 있으려면 먼저 Azure AD Multi-Factor Authentication에 등록해야 합니다. Azure AD 조직의 MFA 등록 정책이 모든 사용자에게 할당되도록 구성해야 합니다.
+다단계 인증은 사용자 이름과 암호 이외에 추가 기능을 사용하는 사용자를 확인하는 수단을 제공합니다. 사용자 로그인에 대한 두 번째 보안 계층을 제공합니다. 사용자가 MFA 프롬프트에 응답하려면 먼저 Microsoft Entra 다단계 인증에 등록해야 합니다. 모든 사용자에게 할당되도록 Microsoft Entra 조직의 MFA 등록 정책을 구성해야 합니다.
 
 #### 예상 소요 시간: 10분
 
@@ -17,11 +17,11 @@ Azure AD Multi-Factor Authentication은 사용자 이름과 암호 이외에 추
 
 #### 작업 1 - 정책 구성
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com]( https://portal.azure.com)에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com]( https://entra.microsoft.com)에 로그인합니다.
 
-2. 포털 메뉴를 열고 **Azure Active Directory**를 선택합니다.
+2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
 
-3. Azure Active Directory 페이지의 **관리**에서 **보안**을 선택합니다.
+3. 왼쪽 맨의 ID** 아래에서 **보호를** 선택합니다**.
 
 4. 보안 페이지의 왼쪽 탐색 영역에서 **ID 보호**를 선택합니다.
 
@@ -37,16 +37,16 @@ Azure AD Multi-Factor Authentication은 사용자 이름과 암호 이외에 추
 
 9. 또한 정책에서 사용자를 제외하도록 선택할 수 있습니다.
 
-10. **컨트롤**에서 **Azure AD MFA 등록 필요**가 선택되어 있고 변경할 수 없음을 알 수 있습니다.
+10. **컨트롤**에서 **Microsoft Entra ID 다단계 인증 등록 필요**가 선택되어 있고 변경할 수 없음을 알 수 있습니다.
 
 
-#### 작업 2 - MFA 등록에 대한 Azure AD ID 보호 정책 구성
+#### 작업 2 - MFA 등록을 위한 Microsoft Entra Identity Protection 정책 구성
 
-**참고**: Azure AD ID 보호를 사용하려면 Azure AD Premium P2를 활성화해야 합니다. 
+**참고**: Microsoft Entra Identity Protection을 사용하려면 Microsoft Entra ID Premium P2를 활성화해야 합니다. 
 
-1. Azure Portal의 검색 창에서 **Azure AD ID 보호**로 이동합니다.
+1. Microsoft Entra 관리 센터의 검색 창에서 Microsoft Entra Identity Protection**으로 이동합니다**.
 
-1. 메뉴의 **보호**에서 **MFA 등록 정책**을 선택합니다.
+1. 메뉴의 보호**에서 **다단계 인증 등록 정책을** 선택합니다**.
 
 1. **할당**에서 사용자 아래의 **모든 사용자**를 선택하고 MFA를 적용할 사용자를 선택합니다.
 

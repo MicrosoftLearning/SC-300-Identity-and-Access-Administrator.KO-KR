@@ -9,7 +9,7 @@ lab:
 
 ## 랩 시나리오
 
-추가적인 보안 대책으로 Azure AD 조직의 로그인 및 사용자 위험 정책을 사용하고 구성해야 합니다.
+추가 보안 계층으로 Microsoft Entra 조직의 로그인 및 사용자 위험 정책을 사용하도록 설정하고 구성해야 합니다.
 
 #### 예상 소요 시간: 10분
 
@@ -18,11 +18,11 @@ lab:
 
 #### 작업 1 - 정책 구성
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com]( https://portal.azure.com)에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com]( https://entra.microsoft.com)에 로그인합니다.
 
-2. 포털 메뉴를 열고 **Azure Active Directory**를 선택합니다.
+2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
 
-3. Azure Active Directory 페이지의 **관리**에서 **보안**을 선택합니다.
+3. 왼쪽 메뉴의 ID** 아래에서 **보호를** 선택합니다**.
 
 4. 보안 페이지의 왼쪽 탐색 영역에서 **ID 보호**를 선택합니다.
 

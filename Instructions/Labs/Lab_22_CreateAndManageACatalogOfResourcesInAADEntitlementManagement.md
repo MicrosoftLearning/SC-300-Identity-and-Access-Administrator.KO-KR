@@ -1,11 +1,11 @@
 ---
 lab:
-  title: 22 - Azure AD 권한 관리에서 리소스 카탈로그 생성 및 관리
+  title: 22 - Microsoft Entra 권한 관리에서 리소스 카탈로그 만들기 및 관리
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 랩 22: Azure AD 권한 관리에서 리소스 카탈로그 생성 및 관리
+# 랩 22: Microsoft Entra 권한 관리에서 리소스 카탈로그 만들기 및 관리
 
 ## 랩 시나리오
 
@@ -17,21 +17,21 @@ lab:
 
 #### 작업 1 - 카탈로그 만들기
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com](https://portal.azure.com)에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)에 로그인합니다.
 
-    **중요** - Azure AD 사용 약관을 사용하고 구성하려면 다음이 필요합니다.
-    - Azure AD Premium P1, P2, EMS E3 또는 EMS E5 구독.
-    - 해당 구독이 없는 경우 Azure AD Premium을 구매하거나 Azure AD Premium 평가판을 사용할 수 있습니다.
+    **중요** - Microsoft Entra ID 사용 약관을 사용하고 구성하려면 다음이 있어야 합니다.
+    - Microsoft Entra ID Premium P1, P2, EMS E3 또는 EMS E5 구독.
+    - 이러한 구독 중 하나가 없는 경우 Microsoft Entra ID Premium 평가판을 받을 수 있습니다.
     - 구성하려는 디렉터리에 대한 다음 관리자 계정 중 하나:
         - 전역 관리자
         - 보안 관리자
         - 조건부 액세스 관리자
 
-2. **Azure Active Directory**를 열고 **ID 거버넌스**를 선택합니다.
+2. **ID** 메뉴를 열고 ID 거버넌스 **를 선택합니다**.
 
 3. 왼쪽 메뉴의 **권한 관리**에서 **카탈로그**를 선택합니다.
 
-4. 상단 메뉴에서 **+새 카탈로그**를 선택합니다.
+4. 위쪽 메뉴에서 + 새 카탈로그**를 선택합니다**.
 
     ![새 카탈로그 메뉴가 강조 표시된 ID 거버넌스 카탈로그 페이지를 표시하는 화면 이미지 ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
@@ -51,7 +51,7 @@ lab:
 
 #### 작업 2 - 카탈로그에 리소스 추가
 
-액세스 패키지에 리소스를 포함하려면 리소스가 카탈로그에 있어야 합니다. 추가할 수 있는 리소스 유형은 그룹, 애플리케이션, SharePoint Online 사이트입니다. 그룹은 클라우드 생성 Microsoft 365 그룹 또는 클라우드 생성 Azure AD 보안 그룹일 수 있습니다. 애플리케이션은 SaaS 애플리케이션 및 Azure AD에 페더레이션된 애플리케이션을 포함한 Azure AD 엔터프라이즈 애플리케이션일 수 있습니다. 사이트는 SharePoint Online 사이트 또는 SharePoint Online 사이트 모음일 수 있습니다.
+액세스 패키지에 리소스를 포함하려면 리소스가 카탈로그에 있어야 합니다. 추가할 수 있는 리소스 유형은 그룹, 애플리케이션, SharePoint Online 사이트입니다. 그룹은 클라우드 생성 Microsoft 365 그룹 또는 클라우드 생성 Microsoft Entra 보안 그룹일 수 있습니다. 애플리케이션은 SaaS 애플리케이션 및 Microsoft Entra ID에 페더레이션된 애플리케이션을 포함한 Microsoft Entra 엔터프라이즈 애플리케이션일 수 있습니다. 사이트는 SharePoint Online 사이트 또는 SharePoint Online 사이트 모음일 수 있습니다.
 
 1. 필요한 경우, ID 거버넌스 페이지에서 **카탈로그**를 선택합니다.
 
@@ -82,7 +82,7 @@ lab:
 
 카탈로그를 생성된 사용자가 첫 번째 카탈로그 소유자가 됩니다. 카탈로그 관리를 위임하려면 사용자를 카탈로그 소유자 역할에 추가합니다. 이렇게 하면 카탈로그 관리 책임을 공유하는 데 도움이 됩니다.
 
-1. 필요한 경우 Azure Portal에서 **Azure Active Directory**로 이동한 다음, **ID 거버넌스**를 선택하고, **카탈로그**를 선택한 다음, **마케팅**을 선택합니다.
+1. 필요한 경우 Microsoft Entra 관리 센터에서 ID로 이동**한 다음, ID 거버넌스**를 선택하고 **카탈로그를** 선택한 **다음, 마케팅을** 선택합니다**.**
 
 2. 마케팅 카탈로그 페이지의 왼쪽 탐색 메뉴에서 **역할 및 관리자**를 선택합니다.
 
@@ -110,7 +110,7 @@ lab:
 
 #### 작업 5 - 게스트 사용자에 대한 액세스 검토 만들기
 
-1. 액세스 검토는 액세스 수명 주기를 관리할 수 있습니다.Azure AD ID 거버넌스는 액세스 검토의 상태를 보여 주는 개요 대시보드를 제공합니다. **ID 거버넌스** 메뉴에서 **액세스 검토**를 선택합니다.
+1. 액세스 검토는 액세스 수명 주기를 관리할 수 있습니다.Microsoft Entra Identity Governance는 액세스 검토의 상태 보여 주는 개요 대시보드를 제공합니다. **ID 거버넌스** 메뉴에서 **액세스 검토**를 선택합니다.
 
 1. 액세스 검토 메뉴에서 **액세스 검토**를 선택하여 게스트 사용자에 대한 액세스 검토를 구성할 수 있습니다.**+ 새 액세스 검토**를 선택하여 게스트 사용자 액세스 검토를 만듭니다.타일이 열리고 게스트 사용자에 대한 액세스 검토를 구성합니다.
 

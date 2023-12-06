@@ -1,11 +1,11 @@
 ---
 lab:
-  title: 27 - Azure AD 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
+  title: 27 - Microsoft Entra 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 랩 27 - Azure AD 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
+# 랩 27 - Microsoft Entra 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
 
 **참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
 
@@ -23,7 +23,7 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 
 1. **Microsoft Sentinel**을 검색한 다음, 이를 선택합니다. 
 
-1. **Microsoft Sentinel 만들기**를 선택합니다.
+1. 왼쪽 위 모서리에서 +만들기**를 선택합니다**.
 
 1. **작업 영역에 Microsoft Sentinel 추가** 타일에서 **새 작업 영역 만들기**를 선택합니다.
 
@@ -40,12 +40,19 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 1. 메시지가 표시되면 **확인**을 선택하여 Microsoft Sentinel 평가판을 활성화합니다.
 
 #### 작업 2 - 데이터 원본으로 Azure AD 추가
+    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
 
-1. **Microsoft Sentinel**에서 메뉴에서 **구성**으로 이동하고 **데이터 커넥터**를 선택합니다.
+1. Microsoft Sentinel에서 **메뉴에서 콘텐츠 관리**로 이동하고 **콘텐츠 허브**를 선택합니다****.
 
-1. 데이터 커넥터 목록에서 **Azure Active Directory**를 찾아 선택합니다.
+1. 검색 상자를 사용하여 커넥터 목록에서 Azure**를 찾고**, Azure Active Directory**를 찾고**, 검사 상자를 표시합니다.
 
-1. 오른쪽에는 미리 보기 타일이 열립니다.  **커넥터 페이지 열기**를 선택합니다.
+1. 오른쪽에는 미리 보기 타일이 열립니다.  **설치**를 선택합니다.
+
+1. 설치가 완료되면 구성 메뉴에서 데이터 커넥터** 메뉴 항목을 선택합니다**.
+
+    **참고** - 1개의 커넥트or가 설치되어 있고 나열된 Microsoft Entra ID**를 표시**해야 합니다.
+
+1. **Microsoft Entra ID**를 선택한 다음 커넥터 페이지** 열기를 선택합니다**.
 
 1. 커넥터 페이지에서 데이터 커넥터에 대한 지침과 다음 단계가 제공됩니다. **구성**을 계속하려면 각 **필수 구성 요소** 옆에 확인 표시가 있는지 확인합니다.
 
@@ -65,15 +72,15 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 
 1. **Log Analytics 시작** 창을 닫습니다.
 
-1. 샘플 쿼리가 포함된 창이 열리고, **감사**를 선택하고, 스크롤하여 **사용자 ID**를 찾습니다.
+1. 샘플 쿼리가 포함된 창이 열리고, 감사를** 선택하고**, 검색하여 사용자 ID를 찾**습니다**.
 
 1. **실행**을 선택합니다. 
 
-1. 그러면 Azure AD에 사용자 ID 목록이 표시됩니다.  작업 영역을 방금 만들었으므로 결과가 표시되지 않을 수 있습니다.  쿼리의 형식을 확인합니다.
+1. 그러면 Microsoft Entra ID의 사용자 ID 목록이 표시됩니다.  작업 영역을 방금 만들었으므로 결과가 표시되지 않을 수 있습니다.  쿼리의 형식을 확인합니다.
 
 1. 메뉴의 **위협 관리**에서 **헌팅**을 선택합니다. 
 
-1. 아래로 스크롤하여 **사용자 계정 및 인증 애플리케이션별 비정상적인 로그인 위치** 쿼리를 찾습니다.  Azure Active Directory 로그인에 대한 이 쿼리는 각 Azure Active Directory 애플리케이션에 대한 모든 사용자 로그인을 고려하고 개별 애플리케이션 내 사용자의 위치 프로필에서 가장 비정상적인 변경 사항을 선택합니다. 의도는 특정 애플리케이션 벡터를 통해 사용자 계정 손상에 대한 헌팅입니다. 
+1. 아래로 스크롤하여 **사용자 계정 및 인증 애플리케이션별 비정상적인 로그인 위치** 쿼리를 찾습니다.  Microsoft Entra 로그인에 대한 이 쿼리는 각 Microsoft Entra 애플리케이션에 대한 모든 사용자 로그인을 고려하고 개별 애플리케이션 내의 사용자에 대한 위치 프로필에서 가장 비정상적인 변경 사항을 선택합니다. 의도는 특정 애플리케이션 벡터를 통해 사용자 계정 손상에 대한 헌팅입니다. 
 
 1. **쿼리 결과 보기**를 선택하여 쿼리를 실행합니다.
 
