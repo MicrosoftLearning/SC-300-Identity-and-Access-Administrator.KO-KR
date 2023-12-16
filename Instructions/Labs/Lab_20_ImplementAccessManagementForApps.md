@@ -15,21 +15,21 @@ lab:
 
 ### 연습 1 - 엔터프라이즈 앱 구성
 
-#### 작업 1 - Azure AD 테넌트에 앱 추가
+#### 작업 1 - Microsoft Entra 테넌트에 앱 추가
 
-1. 전역 관리자 계정을 사용하여 [https://portal.azure.com](https://portal.azure.com)  에 로그인합니다.
+1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2. 포털 메뉴를 열고 **Azure Active Directory**를 선택합니다.
+2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
 
-3. Azure Active Directory 페이지의 **관리**에서 **엔터프라이즈 애플리케이션**을 선택합니다.
+3. ID 메뉴의 애플리케이션**에서 **엔터프라이즈 애플리케이션을** 선택합니다**.
 
 4. 엔터프라이즈 애플리케이션 창에서 **새 애플리케이션**을 선택합니다.
 
     ![새 애플리케이션이 강조 표시된 엔터프라이즈 애플리케이션 페이지를 표시하는 화면 이미지](./media/lp3-mod1-new-enterprise-application.png)
 
-5. Azure AD 갤러리 찾아보기(미리 보기) 페이지의 **애플리케이션 검색** 상자에 **GitHub**를 입력합니다.
+5. Microsoft Entra 갤러리 찾아보기 페이지의 **검색 애플리케이션** 상자에 GitHub**를 입력**합니다.
 
-    ![검색 상자가 강조 표시된 Azure AD 갤러리 찾아보기(미리 보기) 페이지를 표시하는 화면 이미지](./media/lp3-mod1-azure-ad-gallery-search.png)
+    ![검색 상자가 강조 표시된 Microsoft Entra 갤러리 찾아보기 페이지를 표시하는 화면 이미지](./media/lp3-mod1-azure-ad-gallery-search.png)
 
 6. 결과에서 **GitHub Enterprise Cloud – 엔터프라이즈 계정**을 선택합니다.
 
@@ -43,9 +43,9 @@ lab:
 
 2. 또는 왼쪽 탐색의 **관리**에서 **사용자 및 그룹**을 선택할 수 있습니다.
 
-3. 사용자 및 그룹 페이지의 메뉴에서 **+사용자/그룹 추가**를 선택합니다.
+3. 사용자 및 그룹 페이지의 메뉴에서 + 사용자/그룹** 추가를 선택합니다**.
 
-4. 할당 추가 페이지에서 **사용자 및 그룹**을 선택합니다.
+4. [할당 추가] 페이지에서 [사용자 및 그룹] 섹션에서 [없음]을 **선택합니다****.**
 
 5. 사용자 및 그룹 창에서 관리자 계정을 선택한 다음 **선택**을 선택합니다.
 

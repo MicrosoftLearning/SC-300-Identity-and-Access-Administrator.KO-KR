@@ -34,7 +34,7 @@ lab:
 
 7. 사용자 유형에서 **외부**를 선택한 다음, **만들기**를 선택합니다.
 
-8. **OAuth 동의 화면**의 앱 정보에서 앱 이름(예: **Azure AD**)을 입력합니다.
+8. OAuth 동의 화면**의 **앱 정보 아래에 Microsoft Entra ID**와 같은 **앱 이름을 입력합니다.
 
 9. 사용자 지원 이메일에서 이메일 주소를 선택합니다. 여기에는 Google에 로그인하는 데 사용한 메일 주소가 포함되어야 합니다.
 
@@ -52,7 +52,7 @@ lab:
 
 14. **+ 자격 증명 만들기**를 선택한 다음, **OAuth 클라이언트 ID**를 선택합니다.
 
-15. 애플리케이션 유형 메뉴에서 웹 애플리케이션을 선택합니다. AZURE AD B2B와 같이 애플리케이션에 적합한 이름을 지정합니다. **권한 있는 리디렉션 URI**에서 다음 URI를 추가합니다.
+15. 애플리케이션 유형 메뉴에서 웹 애플리케이션을 선택합니다. Microsoft Entra B2B와 같이 애플리케이션에 적합한 이름을 지정합니다. **권한 있는 리디렉션 URI**에서 다음 URI를 추가합니다.
 
    ```
       https://login.microsoftonline.com
@@ -79,12 +79,12 @@ lab:
 
 ### 연습 2 - 외부 ID 공급자와 작동하도록 Azure 구성
 
-#### 작업 1 - Google 페더레이션에 대한 Azure AD 구성
-1. 관리자 권한으로  [https://portal.azure.com](https://portal.azure.com)  에 로그인합니다.
+#### 작업 1 - Google 페더레이션에 대한 Microsoft Entra ID 구성
+1. 관리자 권한으로  [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2.  **Azure Active Directory**를 선택합니다.
+2. Microsoft Entra ID **를 선택합니다**.
 
-3.  **관리**에서 **외부 ID**를 선택합니다.
+3. ID **에서**외부 ID를 ** 선택합니다**.
 
 4. 왼쪽 메뉴에서 **모든 ID 공급자** 를 선택합니다.
 
@@ -101,9 +101,9 @@ lab:
 #### 작업 2 - 테스트 사용자 계정 초대
 9. 기존 Gmail 계정을 사용한 경우 **외부 ID | 모든 ID 공급자**를 사용하여 계정을 삭제해야 합니다. Google 개발자 콘솔로 돌아가서 만든 프로젝트를 삭제할 수도 있습니다.
 
-10. Azure AD(Azure Active Directory)를 엽니다.
+10. Microsoft Entra ID를 엽니다.
 
-11. 사용자로 이동합니다.
+11. 사용자로 이동하여 모든 사용자를** 선택합니다**.
 
 12. **+ 새 사용자**를 선택합니다.
 

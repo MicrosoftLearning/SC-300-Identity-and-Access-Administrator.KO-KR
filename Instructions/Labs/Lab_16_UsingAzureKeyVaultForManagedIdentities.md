@@ -11,7 +11,7 @@ lab:
 
 ## 랩 시나리오
 
-Azure 리소스에 대한 관리 ID를 사용하면 코드에서 Azure AD 인증을 지원하는 리소스에 인증하기 위한 액세스 토큰을 가져올 수 있습니다.그러나 모든 Azure 서비스가 Azure AD 인증을 지원하는 것은 아닙니다. 이러한 서비스에서 Azure 리소스에 대한 관리 ID를 사용하려면 Azure Key Vault에 서비스 자격 증명을 저장하고 관리 ID로 Key Vault에 액세스하여 자격 증명을 검색합니다.
+Azure 리소스의 관리 ID를 사용할 때 코드에서 Microsoft Entra 인증을 지원하는 리소스에 인증하기 위한 액세스 토큰을 가져올 수 있습니다.그러나 모든 Azure 서비스가 Microsoft Entra 인증을 지원하지는 않습니다. 이러한 서비스에서 Azure 리소스에 대한 관리 ID를 사용하려면 Azure Key Vault에 서비스 자격 증명을 저장하고 관리 ID로 Key Vault에 액세스하여 자격 증명을 검색합니다.
 
 #### 예상 소요 시간: 20분
 
@@ -23,9 +23,9 @@ Azure 리소스에 대한 관리 ID를 사용하면 코드에서 Azure AD 인증
 
 1. **+ 리소스 생성**를 선택합니다.
 
-1. Marketplace 검색 창에서 **Windows 클라이언트**를 입력합니다.
+1. Marketplace 검색 창에서 Windows 11**을 입력**합니다.
 
-1. Windows 클라이언트를 선택하고 **계획 드롭다운에서 Windows 10 Enterprise 버전 22H2 - x64 Gen 1**을 선택합니다**.** 그런 다음, **만들기**를 선택합니다.
+1. Windows 11을 선택하고 **계획 드롭다운에서 Windows 11 Enterprise 버전 21H2**를 선택합니다**.** 그런 다음, **만들기**를 선택합니다.
 
 1. 기본 탭에서 VM의 관리자 사용자 이름과 암호를 만들어야 합니다.
 

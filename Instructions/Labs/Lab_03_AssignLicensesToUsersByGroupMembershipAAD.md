@@ -9,7 +9,7 @@ lab:
 
 ## 랩 시나리오
 
-조직에서 Azure AD의 보안 그룹을 사용하여 라이선스를 관리하기로 결정했습니다. 새로운 보안 그룹을 구성하고, 해당 그룹에 라이선스를 할당하고, 그룹 구성원 라이선스가 업데이트되었는지 확인해야 합니다.
+조직에서 Microsoft Entra ID의 보안 그룹을 사용하여 라이선스를 관리하기로 결정했습니다. 새로운 보안 그룹을 구성하고, 해당 그룹에 라이선스를 할당하고, 그룹 구성원 라이선스가 업데이트되었는지 확인해야 합니다.
 
 #### 예상 소요 시간: 25분
 
@@ -32,11 +32,11 @@ lab:
     
 5. 브라우저 창을 닫습니다.
 
-#### 작업 2 - Azure Active Directory에서 보안 그룹 만들기
+#### 작업 2 - Microsoft Entra ID에서 보안 그룹 만들기
 
-1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) 으로 이동합니다.
+1. [https://entra.microsoft.com](https://entra.microsoft.com)으로 이동합니다.
 
-2. 왼쪽 탐색 영역의 **관리**에서 **그룹**을 선택합니다.
+2. 왼쪽 탐색 창의 ID 아래에서 **그룹을** 선택한 **다음 모든 그룹을** 선택합니다**.**
 3. 그룹 페이지의 메뉴에서 **새 그룹**을 선택합니다.
 4. 다음 정보를 사용하여 그룹을 생성합니다.
 
@@ -86,15 +86,15 @@ lab:
     
 5. 브라우저 창을 닫습니다. 
 
-### 연습 2 - Azure Active Directory에서 Microsoft 365 그룹 만들기
+### 연습 2 - Microsoft Entra ID에서 Microsoft 365 그룹 만들기
 
 #### 작업 1 - 그룹 만들기
 
-Azure AD 관리자의 업무 중 하나는 다양한 유형의 그룹을 만드는 것입니다. 조직의 영업부를 위해 새로운 Microsoft 365 그룹을 만들어야 합니다.
+Microsoft Entra 관리자로서의 업무의 일부는 다양한 유형의 그룹을 만드는 것입니다. 조직의 영업부를 위해 새로운 Microsoft 365 그룹을 만들어야 합니다.
 
-1. [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) 으로 이동합니다.
+1. [https://entra.microsoft.com]( https://entra.microsoft.com) 으로 이동합니다.
 
-2. 왼쪽 탐색 영역의 **관리**에서 **그룹**을 선택합니다.
+2. 왼쪽 탐색 창의 ID 아래에서 **그룹을** 선택한 **다음 모든 그룹을** 선택합니다**.**
 
 3. 그룹 페이지의 메뉴에서 **새 그룹**을 선택합니다.
 
@@ -118,11 +118,11 @@ Azure AD 관리자의 업무 중 하나는 다양한 유형의 그룹을 만드�
 
 회사가 성장함에 따라 수동으로 그룹을 관리하는 것은 시간이 너무 오래 걸릴 수 있습니다. 디렉터리를 표준화한 이후에는 동적 그룹을 활용할 수 있습니다. 실제로 동적 그룹을 생성할 준비가 되었는지 확인하기 위해 새로운 동적 그룹을 만들어봐야 합니다.
 
-1. 테넌트에서 전역 관리자 또는 사용자 관리자 역할이 할당된 계정으로 [https://portal.azure.com](https://portal.azure.com)에 로그인합니다.
+1. 테넌트에서 전역 관리자 또는 사용자 관리자 역할이 할당된 계정으로 [https://entra.microsoft.com](https://entra.microsoft.com)에 로그인합니다.
 
-2. **Azure Active Directory**를 선택합니다.
+2. **ID**를 선택합니다.
 
-3. **관리**에서 **그룹**을 선택한 다음 **새 그룹**을 선택합니다.
+3. 그룹** 아래에서 **모든 그룹을** 선택한 **다음 새 그룹을** 선택합니다**.
 
 4. 새 그룹 페이지의 **그룹 종류**에서 **보안**을 선택합니다.
 
@@ -156,9 +156,9 @@ Azure AD 관리자의 업무 중 하나는 다양한 유형의 그룹을 만드�
 
 **참고** - 동적 그룹 멤버 자격의 모집단은 최대 15분이 걸릴 수 있습니다.
 
-1. **홈** `Azure Active Directory`에서 선택합니다.
-2. **Azure Active Directory**를 시작합니다.
-3. **관리** 메뉴에서 **그룹**을 선택합니다.
+1. **홈** `Microsoft Entra admin center`에서 선택합니다.
+2. ID를 시작 **합니다**.
+3. **그룹** 메뉴에서 모든 그룹에서** 선택합니다**.
 4. 필터 상자에 **SC300**을 입력하면 새로 만든 그룹이 목록에 표시됩니다.
 5. **SC300-myDynamicGroup**을 선택하여 그룹을 엽니다.
 6. 그룹의 *직접 구성원 수가 30명이 넘는다는 메시지가 표시됩니다.
@@ -171,6 +171,6 @@ Azure AD 관리자의 업무 중 하나는 다양한 유형의 그룹을 만드�
 
    - (user.objectid -ne null) 및 (user.userType -eq "Guest") 식을 사용하면 됩니다.
 
-2. Azure AD 사용자의 **구성원**만 포함된 그룹을 만들어 봅니다.
+2. Microsoft Entra 사용자의 구성원**만 **있는 그룹을 만듭니다.
 
    - (user.objectid -ne null) 및 (user.userType -eq "Member") 식을 사용하면 됩니다.

@@ -5,7 +5,7 @@ lab:
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# 랩 10 - Windows 및 Linux 가상 머신에 대한 Azure AD 인증
+# 랩 10 - Windows 및 Linux Virtual Machines용 Microsoft Entra 인증
 
 **참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
 
@@ -23,16 +23,18 @@ lab:
 
 1. **+ 리소스 생성**를 선택합니다.
 
-1. Marketplace 검색 창에서 **Windows Server**를 입력합니다.
+1. Marketplace 검색 창에서 Windows 11**을 입력**합니다.
 
-1. **Windows Server**를 선택하고 소프트웨어 플랜 드롭다운에서 **Windows Server 2022 Datacenter**를 선택합니다.
+1. Windows 11 상자에서 **소프트웨어 계획 선택 드롭다운에서 Windows 11 Enterprise 22H2**를 선택합니다**.**
 
 1. 기본 탭에서 VM의 관리자 사용자 이름과 암호를 만들어야 합니다.
    - 기억할 수 있는 사용자 이름과 안전한 암호를 사용합니다.
 
-1. **관리** 탭의 Azure AD 섹션에서 Azure AD로 로그인 확인란을 선택합니다.
+1. 관리 탭의 **Azure AD 섹션에서 Azure AD**로 로그인할 **상자를** 검사.
 
-1. ID 섹션 아래의 **시스템 할당 관리 ID**가 자동으로 선택되고 회색으로 표시된 것을 확인할 수 있습니다. Azure AD로 로그인하도록 설정했으면 자동으로 선택됩니다.
+    참고: 2023년 11월 1일 현재 이 UI는 Microsoft Entra ID를 표시하도록 업데이트되지 않았으며 여전히 Azure AD를 참조합니다.
+
+    참고2: ID 섹션 아래의 **시스템 할당 관리 ID**가 자동으로 검사 회색으로 표시됩니다. Azure AD로 로그인하도록 설정했으면 자동으로 선택됩니다.
 
 1. 가상 머신을 만드는 과정의 나머지 단계를 진행합니다. 
 
