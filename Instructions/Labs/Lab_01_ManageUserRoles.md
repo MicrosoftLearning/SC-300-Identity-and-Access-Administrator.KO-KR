@@ -6,7 +6,7 @@ lab:
 ---
 
 # WWL 테넌트 - 사용 약관
-강사 주도 교육 제공의 일부로 테넌트를 제공하는 경우, 강사 주도 교육에서 실습 랩을 지원하기 위해 테넌트를 사용할 수 있습니다. 테넌트를 실습 랩 외부에서 공유하거나 사용해서는 안 됩니다. 이 과정에서 사용되는 테넌트는 평가판 테넌트이며 클래스가 종료된 후 사용하거나 액세스할 수 없으며 확장판에서도 사용할 수 없습니다. 테넌트를 유료 구독으로 변환해서는 안 됩니다. 이 과정의 일부로 얻은 테넌트는 Microsoft Corporation의 재산으로 유지되며 언제든지 액세스 권한을 획득하고 다시 소유할 수 있는 권리를 보유합니다. 
+강사 진행 교육 제공의 일부로 테넌트를 제공하는 경우, 강사 진행 교육에서 실습 랩을 지원하기 위해 테넌트를 사용할 수 있습니다. 테넌트를 실습 랩 외부에서 공유하거나 사용해서는 안 됩니다. 이 과정에서 사용되는 테넌트는 평가판 테넌트이며 클래스가 종료된 후 사용하거나 액세스할 수 없으며 확장판에서도 사용할 수 없습니다. 테넌트를 유료 구독으로 변환해서는 안 됩니다. 이 과정의 일부로 얻은 테넌트는 Microsoft Corporation의 재산으로 유지되며 언제든지 액세스 권한을 획득하고 다시 소유할 수 있는 권리를 보유합니다. 
 
 
 
@@ -209,7 +209,7 @@ Microsoft Entra ID를 사용하여 권한이 낮은 역할에서 ID 작업을 �
         -DisplayName "New PW User" `
         -GivenName "New" -Surname "User" `
         -MailNickname "newuser" `
-        -UsageLocation "USA" `
+        -UsageLocation "US" `
         -UserPrincipalName "newuser@<labtenantname.com>" `
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Research" -JobTitle "Trainer"
