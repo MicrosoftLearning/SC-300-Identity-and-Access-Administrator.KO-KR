@@ -91,11 +91,11 @@ lab:
 1. 가상 머신 RDP 세션을 **종료**합니다.
 
 
-#### 작업 4 - Azure AD 로그인을 지원하도록 RDP 파일 수정
+#### 작업 4 - Microsoft Entra ID 로그인을 지원하도록 RDP 파일 수정
 
 1. 파일 관리자에서 **다운로드** 폴더를 엽니다.
 
-1. RDP 파일의 **복사본을 만들고** 파일 이름의 끝에 **-AzureAD**를 추가합니다.
+1. **RDP 파일의 복사본**을 만들고 파일 이름의 끝에 -EntraID**를 추가**합니다.
 
 1. 메모장을 사용하여 방금 복사한 RDP 파일의 새 버전을 편집합니다. 파일의 아래쪽에 이 두 줄의 텍스트를 추가합니다.
      ```
@@ -105,11 +105,11 @@ lab:
  
  1. RDP 파일을 **저장**합니다.  이제 파일이 두 가지 버전으로 있어야 합니다.
       - <<virtual machine name>>.RDP
-      - <<virtual machine name>>-AzureAD.RDP
+      - <<virtual machine name>>-EntraID.RDP
 
-#### 작업 5 - Azure AD 로그인을 사용하여 Windows Server 2022 Datacenter에 연결
+#### 작업 5 - Microsoft Entra ID 로그인을 사용하여 Windows 가상 머신에 커넥트
 
-1. **<<virtual machine name>>-AzureAD.RDP 열기
+1. **<<virtual machine name>>-EntraID.RDP를 엽니다.
 
 1. 대화 상자가 열리면 **연결**을 선택합니다.
 
@@ -129,19 +129,17 @@ lab:
 
 1. Windows Server는 로그인을 확인하고 일반 서버 관리자 대시보드로 열어야 합니다.
 
-#### 작업 6 -- Azure AD 로그인을 탐색하는 선택적 테스트
+#### 작업 6 -- Microsoft Entra ID 로그인을 탐색하는 선택적 테스트
 
 1. 관리자 그룹에 추가된 사용자가 JoniS뿐인지 확인합니다.
 
-1. 서버 관리자 대시보드에서 왼쪽 위의 **도구** 메뉴를 선택합니다.
-
-1. **컴퓨터 관리** 도구를 시작합니다.
+1. 시작 단추에서 보조 마우스 클릭을 사용한 다음 팝업 메뉴에서 컴퓨터 관리를** 선택합니다**.
 
 1. **로컬 사용자와 그룹**을 연 다음, **그룹, 관리자**를 탐색합니다.
 
 1. 목록에 **Azure\JoniSherman....** 이 표시됩니다.
 
-1. 다른 Azure AD 멤버가 로그인할 수 있는지 확인합니다.
+1. 다른 Microsoft Entra ID 멤버가 로그인할 수 있는지 확인합니다.
 
 1. 원격 데스크톱 세션에서 로그아웃합니다.
 
