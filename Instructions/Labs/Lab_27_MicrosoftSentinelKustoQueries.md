@@ -25,7 +25,7 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 
 1. 왼쪽 위 모서리에서 +만들기**를 선택합니다**.
 
-1. **작업 영역에 Microsoft Sentinel 추가** 타일에서 **새 작업 영역 만들기**를 선택합니다.
+1. 작업 영역 타일에 **Microsoft Sentinel 추가에서 + 새 작업 영역** 만들기를 선택합니다**.**
 
 1. **리소스 그룹**에서 **새로 만들기**를 선택하고 **Sentinel-RG**를 입력합니다.
 
@@ -40,11 +40,11 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 1. 메시지가 표시되면 **확인**을 선택하여 Microsoft Sentinel 평가판을 활성화합니다.
 
 #### 작업 2 - 데이터 원본으로 Azure AD 추가
-    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
+    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. Microsoft Sentinel에서 **메뉴에서 콘텐츠 관리**로 이동하고 **콘텐츠 허브**를 선택합니다****.
 
-1. 검색 상자를 사용하여 커넥터 목록에서 Azure**를 찾고**, Azure Active Directory**를 찾고**, 검사 상자를 표시합니다.
+1. 검색 상자를 사용하여 커넥터 목록에서 Entra**를 찾고**, Microsoft Entra ID**를 찾고**, 검사 상자를 표시합니다.
 
 1. 오른쪽에는 미리 보기 타일이 열립니다.  **설치**를 선택합니다.
 
@@ -64,7 +64,7 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 
 1. **Microsoft Sentinel | 데이터 커넥터** 타일에서 **새로 고침**을 선택하고, 숫자 1은 **연결된** 수에 표시됩니다.
 
-   **참고** - Azure AD 데이터 커넥터는 활성 수에 표시하는 데 몇 분 정도 걸릴 수 있습니다. 
+   **참고** - Microsoft Entra ID 데이터 커넥터는 활성 개수에 표시하는 데 몇 분 정도 걸릴 수 있습니다. 
 
 #### 작업 3 - 사용자 활동에 대한 Kusto 쿼리 실행
 
