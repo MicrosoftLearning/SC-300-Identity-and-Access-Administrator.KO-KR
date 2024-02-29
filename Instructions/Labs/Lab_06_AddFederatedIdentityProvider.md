@@ -34,7 +34,7 @@ lab:
 
 7. 사용자 유형에서 **외부**를 선택한 다음, **만들기**를 선택합니다.
 
-8. OAuth 동의 화면**의 **앱 정보 아래에 Microsoft Entra ID**와 같은 **앱 이름을 입력합니다.
+8. **OAuth 동의 화면**의 앱 정보 아래에 **Microsoft Entra ID**와 같은 앱 이름을 입력합니다.
 
 9. 사용자 지원 이메일에서 이메일 주소를 선택합니다. 여기에는 Google에 로그인하는 데 사용한 메일 주소가 포함되어야 합니다.
 
@@ -79,12 +79,12 @@ lab:
 
 ### 연습 2 - 외부 ID 공급자와 작동하도록 Azure 구성
 
-#### 작업 1 - Google 페더레이션에 대한 Microsoft Entra ID 구성
+#### 작업 1 - Google 페더레이션을 위한 Microsoft Entra ID 구성
 1. 관리자 권한으로  [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2. Microsoft Entra ID **를 선택합니다**.
+2.  **Microsoft Entra ID**를 선택합니다.
 
-3. ID **에서**외부 ID를 ** 선택합니다**.
+3.  **ID**에서  **외부 ID**를 선택합니다.
 
 4. 왼쪽 메뉴에서 **모든 ID 공급자** 를 선택합니다.
 
@@ -103,7 +103,7 @@ lab:
 
 10. Microsoft Entra ID를 엽니다.
 
-11. 사용자로 이동하여 모든 사용자를** 선택합니다**.
+11. 사용자로 이동하여 **모든 사용자**를 선택합니다.
 
 12. **+ 새 사용자**를 선택합니다.
 
