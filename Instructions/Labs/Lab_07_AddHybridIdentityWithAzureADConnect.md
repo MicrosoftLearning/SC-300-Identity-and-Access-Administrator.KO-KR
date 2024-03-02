@@ -1,22 +1,22 @@
 ---
 lab:
-  title: 07 - 선택적 --- Microsoft Entra 커넥트 하이브리드 ID 추가
+  title: 07 - 선택 사항 --- Microsoft Entra Connect로 하이브리드 ID 추가
   learning path: '01'
   module: Module 01 - Implement an identity management solution
 ---
 
-# 랩 07: 선택적 --- Microsoft Entra 커넥트 하이브리드 ID 추가
+# 랩 07: 선택 사항 --- Microsoft Entra Connect로 하이브리드 ID 추가
 
 
 
-# 이 랩은 현재 작동하지 않습니다.  Microsoft Entra ID의 라이선스 변경으로 인해 랩이 실패합니다.  현재 랩의 문제 해결 및 업데이트 중이며 1주일 이내에 다시 온라인 상태로 전환해야 합니다.  다음 랩으로 이동하세요.
+# 이 랩은 현재 작동하지 않습니다.  Microsoft Entra ID의 라이선스 변경으로 인해 랩이 실패했습니다.  현재 랩 문제를 해결하고 업데이트하고 있으며 일주일 이내에 다시 온라인 상태로 만들 예정입니다.  다음 랩으로 이동해주세요.
 
 
 
 
 **참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
 
-**참고 2** - 이 랩의 제목은 선택 사항입니다.  완료하는 데 최소 1시간 이상이 걸리며 랩 단계에서 자세히 설명해야 합니다.  시간이 허락하는 대로 자유롭게 컴퓨터로 작성해 주세요.  회사에서 하이브리드 구성을 이미 설정했거나 Microsoft Entra 커넥트 사용하지 않으려면 이 랩으로 이동하세요.
+**참고 2** - 이 랩의 제목은 선택 사항입니다.  완료하는 데 최소 1시간 이상이 걸리며 랩 단계에서 자세히 설명해야 합니다.  시간이 허락하는 대로 자유롭게 컴퓨터로 작성해 주세요.  회사에서 이미 하이브리드 구성을 설정했거나 Microsoft Entra Connect를 사용할 계획이 없다면 이 랩을 건너뛰세요.
 
 ## 랩 시나리오
 
@@ -75,7 +75,7 @@ lab:
    -   사용자 이름: **demouser**
    -   암호: **작업 1에서 만든 안전한 암호 사용**
 
-2.  DC1**에 대한 **원격 데스크톱 세션 내에서 Windows PowerShell ISE**를 시작한 **다음 스크립트 창을 엽니다.  다음으로 스크립트 창에 다음 스크립트를 추가하고 실행하여 DC1 및 APP1**** Azure VM 모두에서 **Internet Explorer 향상된 보안 구성 및 **사용자 액세스 제어를 사용하지 않도록 설정합니다.
+2.  **DC1**에 대한 원격 데스크톱 세션 내에서 **Windows PowerShell ISE**를 시작한 다음 스크립트 창을 엽니다.  그런 다음 스크립트 창에 다음 스크립트를 추가하고 이를 실행하여 **DC1** 및 **APP1** Azure VM 모두에서 Internet Explorer 보안 강화 구성 및 사용자 Access Control을 사용하지 않도록 설정합니다.
 
     ```pwsh
 
@@ -330,9 +330,9 @@ lab:
     }
     ```
 
-### 작업 6: Microsoft Entra 커넥트 설치
+### 작업 6: Microsoft Entra Connect 설치
 
-이 작업에서는 Microsoft Entra 커넥트 설치합니다.
+이 작업에서는 Microsoft Entra Connect를 설치합니다.
 
 1. **DC1**에 대한 원격 데스크톱 세션 내에서 서버 관리자에서 **로컬 서버**를 선택하고 **IE 보안 강화 구성**이 사용하지 않도록 설정되어 있는지 확인합니다. 그렇지 않은 경우 **IE 보안 강화 구성** 옆의 **켜기** 링크를 선택하고 **관리자** 설정을 **끄기**로 설정하고 **확인**을 선택합니다.
 
@@ -344,7 +344,7 @@ lab:
 
 2. **DC1**에 대한 원격 데스크톱 세션 내에서 Chrome 브라우저를 시작하고 <https://portal.azure.com>에서 Azure Portal로 이동합니다.
 
-3. 로그인하라는 메시지가 표시되면 이 연습의 앞부분에서 메모장 복사한 john.doe** Microsoft Entra 사용자 계정의 **자격 증명을 입력합니다.
+3. 로그인하라는 메시지가 나타나면 이 연습의 앞부분에서 메모장에 복사한 **john.doe** Microsoft Entra 사용자 계정의 자격 증명을 입력합니다.
 
 4. 메시지가 표시되면 **john.doe** 사용자 계정의 암호를 변경합니다. 
   
@@ -354,13 +354,13 @@ lab:
 
 6. **Microsoft Azure 시작** 대화 상자가 표시되면 **나중에**를 선택합니다. 
 
-7. Azure Portal에서 Microsoft Entra 커넥트** 검색**합니다.
+7. Azure Portal에서 **Microsoft Entra Connect**를 검색합니다.
 
-8. 검색 결과 페이지에서 Microsoft Entra 커넥트** 선택합니다**.
+8. 검색 결과 페이지에서 **Microsoft Entra Connect**를 선택합니다.
 
-9.  **Microsoft Entra 커넥트** 페이지에서 Microsoft Entra 커넥트** 다운로드 링크를 선택합니다**.  그런 다음, 메뉴에서 **동기화 연결**을 선택합니다.
+9.  **Microsoft Entra Connect** 페이지에서 **Microsoft Entra Connect 다운로드** 링크를 선택합니다.  그런 다음, 메뉴에서 **동기화 연결**을 선택합니다.
 
-10. **Microsoft 다운로드 사이트의 Microsoft Azure Active Directory 커넥트 v2** 웹 페이지에서 다운로드**를 선택합니다**.
+10. Microsoft 다운로드 사이트의 **Microsoft Azure Active Directory Connect v2** 웹 페이지에서 **다운로드**를 선택합니다.
 
 11. **AzureADConnect.msi**를 실행할지 저장할지 묻는 메시지가 표시되면 **실행**을 선택합니다. 그러면 파일이 다운로드되고 **Microsoft Azure Active Directory Connect** 마법사가 자동으로 시작됩니다. 
 

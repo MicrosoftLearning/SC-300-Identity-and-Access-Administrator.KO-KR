@@ -1,11 +1,11 @@
 ---
 lab:
-  title: 24 - Microsoft Entra Identity Governance 설정에서 외부 사용자의 수명 주기 관리
+  title: 24 - Microsoft Entra ID Governance 설정에서 외부 사용자의 수명 주기를 관리합니다.
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 랩 24: Microsoft Entra Identity Governance 설정에서 외부 사용자의 수명 주기 관리  
+# 랩 24: Microsoft Entra ID Governance 설정에서 외부 사용자의 수명 주기를 관리합니다.  
 
 ## 랩 시나리오
 
@@ -13,13 +13,13 @@ lab:
 
 #### 예상 소요 시간: 5분
 
-### 연습 1 - Microsoft Entra Identity Governance 설정
+### 연습 1 - Microsoft Entra ID 거버넌스 설정
 
-#### 작업 1 - Microsoft Entra Identity Governance 설정에서 외부 사용자의 수명 주기 관리
+#### 작업 1 - Microsoft Entra ID Governance 설정에서 외부 사용자의 수명 주기를 관리합니다.
 
 1. 전역 관리자로 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
 
-2. Microsoft Entra ID 항목을 열고 ID 거버넌스 **를 선택합니다**.
+2. Microsoft Entra ID 항목을 연 다음  **ID 거버넌스**를 선택합니다.
 
 3. 왼쪽 탐색 메뉴의 **권한 관리**에서 **설정**을 선택합니다.
 
