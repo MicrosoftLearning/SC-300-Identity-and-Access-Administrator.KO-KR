@@ -20,9 +20,9 @@ lab:
 
 1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com]( https://entra.microsoft.com)에 로그인합니다.
 
-2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
+2. 포털 메뉴를 열고  **Microsoft Entra ID**를 선택합니다.
 
-3. 왼쪽 메뉴의 ID** 아래에서 **보호를** 선택합니다**.
+3. 왼쪽 메뉴의 **ID**에서 **보호**를 선택합니다.
 
 4. 보안 페이지의 왼쪽 탐색 영역에서 **ID 보호**를 선택합니다.
 
