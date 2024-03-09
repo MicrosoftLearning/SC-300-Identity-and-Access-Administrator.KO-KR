@@ -30,13 +30,13 @@ Microsoft Entra PIM(Privileged Identity Management)은 사용자 지정 역할�
 
 1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)에 로그인합니다.
 
-2. Privileged Identity Management를 검색한 다음 선택합니다 **.**
+2. **Privileged Identity Management**를 검색한 후 선택합니다.
 
 3. 왼쪽 탐색 영역의 Privileged Identity Management 페이지에서 **Azure 리소스**를 선택합니다.
 
 4. 상단 메뉴에서 **리소스 검색**을 선택합니다.
 
-5. Azure 리소스 – 검색 페이지에서 구독을 선택합니다.
+5. Azure 리소스의 검색 페이지에서 구독을 선택합니다.
 
    ![구독 및 리소스 관리가 강조 표시된 Azure 리소스 검색 페이지를 표시하는 화면 이미지](./media/lp4-mod3-pim-azure-resource-management.png)
 
@@ -80,7 +80,7 @@ Microsoft Entra PIM(Privileged Identity Management)은 사용자 지정 역할�
 
 4. **관리**에서 **할당**을 선택합니다.
 
-5. **적격 할당** 탭의 작업 열에서 사용 가능한 옵션을 검토합니다.
+5. 작업 열의 **적격 할당** 탭에서 사용 가능한 옵션을 검토합니다.
 
 6. **제거**를 선택합니다.
 
