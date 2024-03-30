@@ -11,7 +11,7 @@ lab:
 
 ## 랩 시나리오
 
-Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔루션입니다.  Microsoft 및 타사 보안 솔루션에서 데이터 원본을 연결하면 보안 조작 작업을 실행할 수 있습니다.  이 랩 연습에서는 KQL(Kusto 쿼리 언어)을 사용하여 헌팅 쿼리를 실행하기 위해 Azure AD에 대한 데이터 커넥터가 있는 Microsoft Sentinel 작업 영역을 만듭니다. 
+Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔루션입니다.  Microsoft 및 타사 보안 솔루션에서 데이터 원본을 연결하면 보안 조작 작업을 실행할 수 있습니다.  이 랩 연습에서는 KQL(Kusto 쿼리 언어)을 사용하여 헌팅 쿼리를 실행하기 위해 Microsoft Entra ID에 대한 데이터 커넥터가 있는 Microsoft Sentinel 작업 영역을 만듭니다. 
 
 #### 예상 소요 시간: 30분
 
@@ -39,7 +39,7 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 
 1. 메시지가 표시되면 **확인**을 선택하여 Microsoft Sentinel 평가판을 활성화합니다.
 
-#### 작업 2 - 데이터 원본으로 Azure AD 추가
+#### 작업 2 - Microsoft Entra ID를 데이터 원본으로 추가
     **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. **Microsoft Sentinel** 메뉴에서 **콘텐츠 관리**로 이동하여 **콘텐츠 허브**를 선택합니다.

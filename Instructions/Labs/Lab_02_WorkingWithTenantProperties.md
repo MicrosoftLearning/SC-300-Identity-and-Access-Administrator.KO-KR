@@ -77,13 +77,13 @@ Azure 구독은 Microsoft Entra ID와 트러스트 관계가 있습니다. Micro
 
 ### 연습 3 - 개인 정보 설정
 
-#### 작업 1 - Azure AD에서 전역 개인 정보 보호 연락처, 개인정보처리방침 등의 개인 정보 추가
+#### 작업 1 - Microsoft Entra ID에 글로벌 개인 정보 연락처 및 개인정보처리방침 URL을 포함한 개인 정보 추가
 
 전역 개인 정보 보호 연락처와 조직의 개인정보처리방침을 모두 추가하는 것이 좋습니다. 그러면 내부 직원과 외부 게스트가 정책을 검토할 수 있습니다. 개인정보처리방침이 고유하게 생성되고 각 비즈니스에 맞게 조정되기 때문에 도움말은 변호사에게 문의하는 것이 좋습니다.
 
    **참고** - 개인 데이터를 보거나 삭제하는 방법에 대한 자세한 내용은 [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)를 참조하세요. GDPR에 대한 자세한 내용은 [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)를 참조하세요.
 
-Azure AD의 **속성** 영역에 조직의 개인 정보를 추가합니다. 속성 영역에 액세스하고 개인 정보를 추가하려면:
+Microsoft Entra ID의  **속성**  영역에 조직의 개인 정보를 추가합니다. 속성 영역에 액세스하고 개인 정보를 추가하려면:
 
 1. **ID** 메뉴에서 **개요**를 선택한 다음 **속성**을 선택합니다.
 
