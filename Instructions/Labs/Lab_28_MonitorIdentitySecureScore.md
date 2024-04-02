@@ -9,7 +9,7 @@ lab:
 
 ## 랩 시나리오
 
-Microsoft Entra ID 보호는 ID 기반 위험에 대한 자동화된 검색 및 수정을 제공하고, 포털에서 잠재적인 위험을 조사하는 데이터를 제공합니다. Microsoft Entra ID 보안은 또한 ID 보안 태세를 모니터링하고 개선하기 위한 ID 보안 점수를 제공합니다.  Microsoft 365 Defender 및 클라우드용 Microsoft Defender와 동일한 방식으로 ID 보안 점수는 Microsoft Entra ID에서 ID에 대한 전반적인 보안 태세를 개선할 수 있는 개선 작업 및 권장 사항을 제공합니다.  이 랩에서는 이 기능을 탐색합니다. 
+Microsoft Entra ID 보호는 ID 기반 위험에 대한 자동화된 검색 및 수정을 제공하고, 포털에서 잠재적인 위험을 조사하는 데이터를 제공합니다. Microsoft Entra ID 보안은 또한 ID 보안 태세를 모니터링하고 개선하기 위한 ID 보안 점수를 제공합니다.  Microsoft Defender XDR 및 클라우드용 Microsoft Defender와 동일한 방식으로 ID 보안 점수는 Microsoft Entra ID에서 ID에 대한 전반적인 보안 태세를 향상할 수 있는 개선 작업과 권장 사항을 제공합니다.  이 랩에서는 이 기능을 탐색합니다. 
 
 #### 예상 소요 시간: 15분
 
@@ -27,7 +27,7 @@ Microsoft Entra ID 보호는 ID 기반 위험에 대한 자동화된 검색 및 
 
 5. 아래로 스크롤하여 **개선 작업**을 봅니다.
 
-6. 클라우드용 Microsoft Defender 및 Microsoft 365 Defender의 개선 작업과 달리 이러한 개선 작업은 ID에 따라 다릅니다.  이렇게 하면 보안 상태 관리에 더 집중된 잠재적인 작업 목록이 제공됩니다.  이 목록에서 시작된 개선 작업은 전체 테넌트 보안 태세에도 영향을 줍니다. 
+6. 클라우드용 Microsoft Defender 및 Microsoft Defender XDR의 개선 작업과 달리 이러한 개선 작업은 ID에 따라 다릅니다.  이렇게 하면 보안 상태 관리에 더 집중된 잠재적인 작업 목록이 제공됩니다.  이 목록에서 시작된 개선 작업은 전체 테넌트 보안 태세에도 영향을 줍니다. 
 
 #### 작업 2 - 개선 작업 실행
 
