@@ -1,46 +1,44 @@
 ---
 lab:
-  title: 10 - Windows 및 Linux 가상 머신에 대한 Azure AD 인증
+  title: 10 - Windows 및 Linux Virtual Machines에 대한 Microsoft Entra ID 인증
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# 랩 10 - Windows 및 Linux Virtual Machines용 Microsoft Entra 인증
+# 랩 10 - Windows 및 Linux Virtual Machines에 대한 Microsoft Entra 인증
 
 **참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
 
 ## 랩 시나리오
 
-회사는 원격 액세스를 위해 가상 머신에 로그인하는 데 Azure Active Directory를 사용하도록 결정했습니다.  이 랩에서는 Windows 및 Linux 가상 머신에 대해 설정하는 방법을 보여 줍니다.
+회사에서는 원격 액세스를 위해 가상 머신에 로그인하는 데 Microsoft Entra ID를 사용해야 한다고 결정했습니다.  이 랩에서는 Windows 및 Linux 가상 머신에 대해 설정하는 방법을 보여 줍니다.
 
 #### 예상 소요 시간: 30분
 
-### 연습 1 - Azure AD를 사용하여 Azure에서 Windows Virtual Machines에 로그인
+### 연습 1 - Microsoft Entra ID를 사용하여 Azure에서 Windows Virtual Machines에 로그인
 
-#### 작업 1 - Azure AD 로그인을 사용하도록 설정된 Windows Virtual Machine 만들기
+#### 작업 1 - Microsoft Entra ID 로그인이 사용하도록 설정된 Windows 가상 머신 만들기
 
 1. [https://portal.azure.com](https://portal.azure.com)으로 이동
 
 1. **+ 리소스 생성**를 선택합니다.
 
-1. Marketplace 검색 창에서 Windows 11**을 입력**합니다.
+1. Marketplace 검색 창에 **Windows 11**을 입력합니다.
 
-1. Windows 11 상자에서 **소프트웨어 계획 선택 드롭다운에서 Windows 11 Enterprise 22H2**를 선택합니다**.**
+1. **Windows 11** 상자의 소프트웨어 플랜 선택 드롭다운에서 **Windows 11 Enterprise 22H2**를 선택합니다.
 
 1. 기본 탭에서 VM의 관리자 사용자 이름과 암호를 만들어야 합니다.
    - 기억할 수 있는 사용자 이름과 안전한 암호를 사용합니다.
 
-1. 관리 탭의 **Azure AD 섹션에서 Azure AD**로 로그인할 **상자를** 검사.
+1. **관리** 탭의 Microsoft Entra ID 섹션에서 **Microsoft Entra ID로 로그인** 확인란을 선택합니다.
 
-    참고: 2023년 11월 1일 현재 이 UI는 Microsoft Entra ID를 표시하도록 업데이트되지 않았으며 여전히 Azure AD를 참조합니다.
-
-    참고2: ID 섹션 아래의 **시스템 할당 관리 ID**가 자동으로 검사 회색으로 표시됩니다. Azure AD로 로그인하도록 설정했으면 자동으로 선택됩니다.
+        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. 가상 머신을 만드는 과정의 나머지 단계를 진행합니다. 
 
-1. 만들기를 선택합니다.
+1. 만들기를 실행합니다.
 
-#### 작업 2 - 기존 Azure Virtual Machines에 대한 Azure AD 로그인
+#### 작업 2 - 기존 Azure Virtual Machines에 대한 Microsoft Entra ID 로그인
 
 1. [https://portal.azure.com](https://portal.azure.com)에서 **가상 머신**으로 이동합니다.
 
@@ -57,7 +55,7 @@ lab:
 
 1. **검토 + 할당**을 선택하여 프로세스를 완료합니다.
 
-#### 작업 3 - Azure AD 로그인을 지원하도록 서버 VM 업데이트
+#### 작업 3 - Microsoft Entra ID 로그인을 지원하도록 서버 VM 업데이트
 
 1. **연결** 메뉴 항목을 선택합니다.
 
@@ -90,12 +88,11 @@ lab:
 
 1. 가상 머신 RDP 세션을 **종료**합니다.
 
-
 #### 작업 4 - Microsoft Entra ID 로그인을 지원하도록 RDP 파일 수정
 
 1. 파일 관리자에서 **다운로드** 폴더를 엽니다.
 
-1. **RDP 파일의 복사본**을 만들고 파일 이름의 끝에 -EntraID**를 추가**합니다.
+1. RDP 파일의 **복사본을 만들고** 파일 이름의 끝에 **-EntraID**를 추가합니다.
 
 1. 메모장을 사용하여 방금 복사한 RDP 파일의 새 버전을 편집합니다. 파일의 아래쪽에 이 두 줄의 텍스트를 추가합니다.
      ```
@@ -107,7 +104,7 @@ lab:
       - <<virtual machine name>>.RDP
       - <<virtual machine name>>-EntraID.RDP
 
-#### 작업 5 - Microsoft Entra ID 로그인을 사용하여 Windows 가상 머신에 커넥트
+#### 작업 5 - Microsoft Entra ID 로그인을 사용하여 Windows 가상 머신에 연결
 
 1. **<<virtual machine name>>-EntraID.RDP를 엽니다.
 
@@ -133,7 +130,7 @@ lab:
 
 1. 관리자 그룹에 추가된 사용자가 JoniS뿐인지 확인합니다.
 
-1. 시작 단추에서 보조 마우스 클릭을 사용한 다음 팝업 메뉴에서 컴퓨터 관리를** 선택합니다**.
+1. 시작 단추에서 보조 마우스 클릭을 사용한 다음 팝업 메뉴에서 **컴퓨터 관리**를 선택합니다.
 
 1. **로컬 사용자와 그룹**을 연 다음, **그룹, 관리자**를 탐색합니다.
 
@@ -157,9 +154,9 @@ lab:
 
 1. **+ 리소스 생성**를 선택합니다.
 
-1. Ubuntu를 **검색합니다**.
+1. **Ubuntu**를 검색합니다.
 
-1. **Ubuntu Server 22.04 LTS**에서 **만들기**를 선택합니다. 이 테스트 랩에 다른 Linux 서버를 사용할 수 있습니다.
+1. **Ubuntu Server 22.04 LTS**에서 **만들기**를 선택합니다. 이 테스트 랩에 다른 Linux 서버를 사용할 수도 있습니다.
 
 1. **관리** 탭에서 확인란을 선택하여 **Azure Active Directory로 로그인(미리 보기)** 을 사용하도록 설정합니다.
 
