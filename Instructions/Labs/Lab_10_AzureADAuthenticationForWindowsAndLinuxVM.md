@@ -146,7 +146,7 @@ lab:
 
 1. 이런 각 사용자는 액세스가 거부됩니다.
 
-### 선택적 연습 2 - Azure AD를 사용하여 Azure에서 Linux Virtual Machines에 로그인
+### 선택적 연습 2 - Microsoft Entra ID를 사용하여 Azure에서 Linux Virtual Machines에 로그인
 
 #### 작업 1 - 시스템 할당 관리 ID를 사용하여 Linux VM 만들기
 
@@ -158,13 +158,13 @@ lab:
 
 1. **Ubuntu Server 22.04 LTS**에서 **만들기**를 선택합니다. 이 테스트 랩에 다른 Linux 서버를 사용할 수도 있습니다.
 
-1. **관리** 탭에서 확인란을 선택하여 **Azure Active Directory로 로그인(미리 보기)** 을 사용하도록 설정합니다.
+1. **관리** 탭에서 **Microsoft Entra ID로 로그인**을 사용하도록 설정하는 확인란을 선택합니다.
 
 1. **시스템이 할당한 관리 ID**가 선택되어 있는지 확인합니다.
 
 1. 가상 머신을 만드는 과정의 나머지 단계를 진행합니다. 이 미리 보기 중에는 사용자 이름 및 암호 또는 SSH 공개 키를 사용하여 관리자 계정을 만들어야 합니다.
 
-#### 작업 2 - 기존 Azure Virtual Machines에 대한 Azure AD 로그인
+#### 작업 2 - 기존 Azure Virtual Machines에 대한 Microsoft Entra ID 로그인
 
 1. [https://portal.azure.com](https://portal.azure.com)에서 **가상 머신**으로 이동합니다.
 
