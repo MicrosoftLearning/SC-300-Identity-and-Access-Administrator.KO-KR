@@ -23,20 +23,33 @@ lab:
 
 1. **+ 리소스 생성**를 선택합니다.
 
-1. Marketplace 검색 창에 **Windows 11**을 입력합니다.
+1. Marketplace 검색 창에 **Windows 11**을 입력하고 **Enter** 키를 누릅니다.
 
-1. **Windows 11** 상자의 소프트웨어 플랜 선택 드롭다운에서 **Windows 11 Enterprise 22H2**를 선택합니다.
+1. **Windows 11** 상자에서 **v 만들기**를 선택하고 열리는 메뉴에서 **Windows 11 Enterprise 버전 22H2**를 선택합니다.
 
-1. 기본 탭에서 VM의 관리자 사용자 이름과 암호를 만들어야 합니다.
-   - 기억할 수 있는 사용자 이름과 안전한 암호를 사용합니다.
+1. **기본 사항** 탭에서 다음 값을 사용하여 VM을 만듭니다.
+  | 필드 | 사용할 값 |
+  | :-- | :-- |
+  | 구독 | Azure Pass - 스폰서쉽 |
+  | 리소스 그룹 | 새로 만들기 - rgEntraLogin |
+  | 가상 머신 이름 | vmEntraLogin |
+  | 지역 | *default* |
+  | 가용성 옵션 | 인프라 중복 필요 없음 |
+  | 보안 유형 | 표준 |
+  | 크기 | Standard DC1s_v3 - 1 vcpu, 8 GiB 메모리 |
+  | 관리 사용자 이름 | vmEntraAdmin |
+  | 관리자 암호 | 랩 환경에서 제공하는 암호를 사용하거나 기억할 수 있는 안전한 암호를 만듭니다. |
+  | 라이선싱 | 라이선스가 있는지 확인 |
 
-1. **관리** 탭의 Microsoft Entra ID 섹션에서 **Microsoft Entra ID로 로그인** 확인란을 선택합니다.
+1. **디스크** 또는 **네트워킹** 탭에서 아무것도 변경할 필요가 없지만 값을 검토할 수 있습니다.
+
+1. **관리** 탭으로 이동하여 Microsoft Entra ID 섹션에서 **Microsoft Entra ID로 로그인** 확인란을 선택합니다.
 
         NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
-1. 가상 머신을 만드는 과정의 나머지 단계를 진행합니다. 
+1. **검토 및 만들기**를 선택합니다.
 
-1. 만들기를 실행합니다.
+1. **만들기**를 선택하면 됩니다.
 
 #### 작업 2 - 기존 Azure Virtual Machines에 대한 Microsoft Entra ID 로그인
 
@@ -57,7 +70,7 @@ lab:
 
 #### 작업 3 - Microsoft Entra ID 로그인을 지원하도록 서버 VM 업데이트
 
-1. **연결** 메뉴 항목을 선택합니다.
+1. **연결** 메뉴에서 **연결** 항목을 선택합니다.
 
 1. **RDP** 탭에서 **RDP 파일 다운로드**를 선택합니다.  메시지가 표시되면 파일에 대한 **유지** 옵션을 선택합니다.  다운로드 폴더에 저장됩니다.
 
@@ -70,7 +83,7 @@ lab:
 1. 가상 머신을 설정할 때 만든 관리자 사용자 이름과 암호를 사용합니다.
    - 메시지가 표시되면 예라고 말하여 가상 머신 또는 RDP 세션에 대한 액세스를 허용합니다.
 
-1. 서버가 열리고 서버 관리자 대시보드와 같은 모든 소프트웨어가 로드되기를 기다립니다.
+1. VM이 열리고 모든 소프트웨어가 로드되기를 기다립니다.
 
 1. 가상 머신에서 **시작 단추**를 선택합니다.
 
@@ -79,6 +92,8 @@ lab:
 1. 설정 목록에서 **시스템 및 보안**을 선택합니다.
 
 1. **시스템** 설정에서 **원격 액세스 허용** 옵션을 선택합니다.
+
+  참고 - 시스템 하위 메뉴는 열 필요가 없습니다. 이 옵션은 시스템 헤더에서 사용할 수 있습니다.
 
 1. 열리는 대화 상자 아래쪽에 **원격 데스크톱** 섹션이 표시됩니다.
 
@@ -124,7 +139,7 @@ lab:
 
    참고: JoniS는 작업 1 중에 관리자 권한으로 로그인할 수 있는 액세스 권한을 부여한 사용자입니다.
 
-1. Windows Server는 로그인을 확인하고 일반 서버 관리자 대시보드로 열어야 합니다.
+1. Windows에서 로그인을 확인하고 일반 화면으로 열어야 합니다.
 
 #### 작업 6 -- Microsoft Entra ID 로그인을 탐색하는 선택적 테스트
 
@@ -140,9 +155,9 @@ lab:
 
 1. 원격 데스크톱 세션에서 로그아웃합니다.
 
-1. **<<server name>>-AzureAD.RDP** 파일을 다시 시작합니다.
+1. **<<server name>>-EntraID.RDP** 파일을 다시 시작합니다.
 
-1. AdeleV, AlexW, DiegoS와 같은 다른 Azure AD 멤버로 로그인해 보세요.
+1. AdeleV 또는 AlexW 또는 DiegoS와 같은 다른 Microsoft Entra 사용자로 로그인해 봅니다.
 
 1. 이런 각 사용자는 액세스가 거부됩니다.
 
