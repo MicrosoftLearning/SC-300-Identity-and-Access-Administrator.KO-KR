@@ -61,7 +61,7 @@ lab:
    - 사용자 이름 = PradeepG@<<<your lab hoster provided domain>>>
    - 암호 = 리소스 탭의 암호
 5. Pradeep에 액세스 권한이 있고 새 메시지가 표시되는지 확인합니다.
-   - 회사에서 이 애플리케이션의 사용을 모니터링하고 있습니다.
+   - Microsoft Forms에 대한 액세스가 모니터링됩니다.
 6. InPrivate 검색 창을 닫습니다.
 
 ### 연습 2 - Microsoft Defender for Cloud Apps에서 경고 설정
@@ -103,7 +103,7 @@ lab:
    - 사용자 이름 = PradeepG@<<<your lab hoster provided domain>>>
    - 암호 = 리소스 탭의 암호
 5. Pradeep에 액세스 권한이 있고 새 메시지가 표시되는지 확인합니다.
-   - 회사에서 이 애플리케이션의 사용을 모니터링하고 있습니다.
+   - Microsoft Forms에 대한 액세스가 모니터링됩니다.
 6. InPrivate 검색 창을 닫습니다.
 
 #### 작업 3 - Defender for Cloud Apps의 활동 검토

@@ -122,7 +122,7 @@ lab:
     }
     ```
 
-6. 외부 사용자를 초대하기 위해 MgInvitation 명령이 전송됩니다.
+6. 외부 사용자를 초대하기 위해 MgInvitation 명령을 전송합니다.
 
     ```
     New-MgInvitation -BodyParameter $params

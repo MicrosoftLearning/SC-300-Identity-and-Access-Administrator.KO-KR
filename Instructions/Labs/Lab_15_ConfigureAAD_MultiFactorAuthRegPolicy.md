@@ -9,7 +9,7 @@ lab:
 
 ## 랩 시나리오
 
-다단계 인증은 사용자 이름과 암호 이외에 추가 기능을 사용하는 사용자를 확인하는 수단을 제공합니다. 사용자 로그인에 대한 두 번째 보안 계층을 제공합니다. 사용자가 MFA 프롬프트에 응답하려면 먼저 Microsoft Entra 다단계 인증에 등록해야 합니다. 모든 사용자에게 할당되도록 Microsoft Entra 조직의 MFA 등록 정책을 구성해야 합니다.
+다단계 인증은 사용자 이름과 암호 이외에 추가 기능을 사용하는 사용자를 확인하는 수단을 제공합니다. 사용자 로그인에 대한 두 번째 보안 계층을 제공합니다. 사용자가 MFA 프롬프트에 응답할 수 있으려면 먼저 Microsoft Entra 다단계 인증에 사용자를 등록해야 합니다. Microsoft Entra 조직의 MFA 등록 정책이 모든 사용자에게 할당되도록 구성해야 합니다.
 
 #### 예상 소요 시간: 10분
 
@@ -19,9 +19,9 @@ lab:
 
 1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com]( https://entra.microsoft.com)에 로그인합니다.
 
-2. 포털 메뉴를 열고 Microsoft Entra ID **를 선택합니다**.
+2. 포털 메뉴를 열고  **Microsoft Entra ID**를 선택합니다.
 
-3. 왼쪽 맨의 ID** 아래에서 **보호를** 선택합니다**.
+3. 왼쪽 맨의 **ID**아래에서 **보호**선택합니다.
 
 4. 보안 페이지의 왼쪽 탐색 영역에서 **ID 보호**를 선택합니다.
 
@@ -42,15 +42,15 @@ lab:
 
 #### 작업 2 - MFA 등록을 위한 Microsoft Entra Identity Protection 정책 구성
 
-**참고**: Microsoft Entra Identity Protection을 사용하려면 Microsoft Entra ID Premium P2를 활성화해야 합니다. 
+**참고**: Microsoft Entra ID 보호를 사용하려면 Microsoft Entra ID Premium P2를 활성화해야 합니다. 
 
-1. Microsoft Entra 관리 센터의 검색 창에서 Microsoft Entra Identity Protection**으로 이동합니다**.
+1. Microsoft Entra 관리 센터의 검색 창에서 **Microsoft Entra ID 보호**로 이동합니다.
 
-1. 메뉴의 보호**에서 **다단계 인증 등록 정책을** 선택합니다**.
+1. 메뉴의 **보호** 아래에서 **다단계 인증 등록 정책**을 선택합니다.
 
 1. **할당**에서 사용자 아래의 **모든 사용자**를 선택하고 MFA를 적용할 사용자를 선택합니다.
 
-1. **정책 적용**을 **끄기**에서 **켜기**로 변경합니다.
+1. **정책 적용**을 **사용 안 함**에서 **사용**으로 변경합니다.
 
 1. **저장**을 선택합니다.
 
