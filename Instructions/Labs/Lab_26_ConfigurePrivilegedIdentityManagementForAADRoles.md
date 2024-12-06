@@ -7,6 +7,8 @@ lab:
 
 # 랩 26: Microsoft Entra 역할에 대한 Privileged Identity Management 구성
 
+### 로그인 유형 = Microsoft 365 관리
+
 ## 랩 시나리오
 
 권한 있는 역할 관리자는 적합 역할 할당을 활성화하는 사용자에 대한 환경 변경을 포함하여 Microsoft Entra 조직에서 PIM(Privileged Identity Management)을 사용자 지정할 수 있습니다. PIM을 구성하는 데 익숙해져야 합니다.
@@ -55,7 +57,7 @@ Microsoft Entra 역할에 대한 설정을 열려면 다음 단계를 따릅니�
 
 5. 역할 설정을 구성하면, **업데이트**를 선택해 변경 사항을 저장합니다.
 
-### 연습 2 - Microsoft Entra 역할을 사용한 PIM
+### 연습 2 - PIM을 사용하여 Microsoft Entra 역할 할당
 
 #### 작업 1 - 역할 할당
 

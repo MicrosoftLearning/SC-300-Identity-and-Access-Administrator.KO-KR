@@ -7,6 +7,8 @@ lab:
 
 # 18 - 클라우드용 Defender Apps 액세스 및 세션 정책
 
+### 로그인 유형 = Microsoft 365 관리
+
 ## 랩 시나리오
 
 클라우드용 Microsoft Defender Apps를 사용하여 모니터링하는 클라우드 앱과 관련된 추가 조건부 액세스 정책을 만들 수 있습니다.  이러한 정책 만들기는 클라우드용 Microsoft Defender Apps 포털 내의 제어 메뉴 내에서 수행할 수 있습니다.
@@ -61,7 +63,7 @@ lab:
    - 사용자 이름 = PradeepG@<<<your lab hoster provided domain>>>
    - 암호 = 리소스 탭의 암호
 5. Pradeep에 액세스 권한이 있고 새 메시지가 표시되는지 확인합니다.
-   - Microsoft Forms에 대한 액세스가 모니터링됩니다.
+   - 회사에서 이 애플리케이션의 사용을 모니터링하고 있습니다.
 6. InPrivate 검색 창을 닫습니다.
 
 ### 연습 2 - Microsoft Defender for Cloud Apps에서 경고 설정
@@ -103,7 +105,7 @@ lab:
    - 사용자 이름 = PradeepG@<<<your lab hoster provided domain>>>
    - 암호 = 리소스 탭의 암호
 5. Pradeep에 액세스 권한이 있고 새 메시지가 표시되는지 확인합니다.
-   - Microsoft Forms에 대한 액세스가 모니터링됩니다.
+   - 회사에서 이 애플리케이션의 사용을 모니터링하고 있습니다.
 6. InPrivate 검색 창을 닫습니다.
 
 #### 작업 3 - Defender for Cloud Apps의 활동 검토

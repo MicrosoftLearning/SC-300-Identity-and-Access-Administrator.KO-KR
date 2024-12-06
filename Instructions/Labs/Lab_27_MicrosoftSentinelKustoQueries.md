@@ -7,7 +7,7 @@ lab:
 
 # 랩 27 - Microsoft Entra 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
 
-**참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
+### 로그인 유형 = Azure 리소스 로그인
 
 ## 랩 시나리오
 
@@ -40,7 +40,6 @@ Microsoft Sentinel은 Microsoft의 클라우드 네이티브 SIEM 및 SOAR 솔�
 1. 메시지가 표시되면 **확인**을 선택하여 Microsoft Sentinel 평가판을 활성화합니다.
 
 #### 작업 2 - Microsoft Entra ID를 데이터 원본으로 추가
-    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. **Microsoft Sentinel** 메뉴에서 **콘텐츠 관리**로 이동하여 **콘텐츠 허브**를 선택합니다.
 
