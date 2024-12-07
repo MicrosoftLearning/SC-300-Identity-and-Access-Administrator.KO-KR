@@ -7,6 +7,8 @@ lab:
 
 # 랩 11 - Privileged Identity Management에서 Azure 리소스 역할 할당
 
+### 로그인 유형 = Azure 리소스 로그인
+
 **참고** - 이 랩에는 Azure Pass가 필요합니다. 지침은 랩 00을 참조하세요.
 
 ## 랩 시나리오
@@ -21,7 +23,6 @@ Microsoft Entra PIM(Privileged Identity Management)은 사용자 지정 역할�
 
 사용자를 Azure 리소스 역할에 대해 적격 사용자로 지정해야 합니다.
 
-
 #### 예상 소요 시간: 10분
 
 ### 연습 1 - Azure 리소스를 사용한 PIM
@@ -34,11 +35,9 @@ Microsoft Entra PIM(Privileged Identity Management)은 사용자 지정 역할�
 
 3. 왼쪽 탐색 영역의 Privileged Identity Management 페이지에서 **Azure 리소스**를 선택합니다.
 
-4. 상단 메뉴에서 **리소스 검색**을 선택합니다.
+4. 구독 드롭다운에서 MOC 구독##### 항목을 선택합니다. 그런 다음 화면 에서 **리소스 관리**를 선택합니다.
 
 5. Azure 리소스의 검색 페이지에서 구독을 선택합니다.
-
-   ![구독 및 리소스 관리가 강조 표시된 Azure 리소스 검색 페이지를 표시하는 화면 이미지](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. **개요** 페이지에서 정보를 검토합니다.
 
@@ -52,7 +51,7 @@ Microsoft Entra PIM(Privileged Identity Management)은 사용자 지정 역할�
 
 10. **구성원 선택**에서 **선택된 구성원 없음**을 선택합니다.
 
-11. 역할을 할당할 조직 사용자인 **Miriam Graham**을 선택합니다.  그런 후에 **선택**을 선택합니다.
+11. 구성원 또는 그룹 선택에서 역할이 할당될 조직의 관리자 역할 **User1-######@LODSPRODMCA.onmicrosoft.com**을(를) 검색합니다.  그런 후에 **선택**을 선택합니다.
 
 12. **다음**을 선택합니다.
 

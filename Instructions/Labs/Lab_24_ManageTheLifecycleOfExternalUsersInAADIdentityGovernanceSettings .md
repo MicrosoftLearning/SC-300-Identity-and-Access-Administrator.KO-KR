@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 랩 24: Microsoft Entra ID Governance 설정에서 외부 사용자의 수명 주기를 관리합니다.  
+# 랩 24: Microsoft Entra ID Governance 설정에서 외부 사용자의 수명 주기를 관리합니다.
+
+### 로그인 유형 = Microsoft 365 관리
 
 ## 랩 시나리오
 
