@@ -109,7 +109,7 @@ Microsoft 365 관리 센터를 통해 라이선스를 추가하고 제거해야 
 
    ![Delia Dennis로 로그인한 Office.com 웹 사이트의 화면 이미지. 라이선스가 할당되었으므로 Office 애플리케이션을 사용할 수 있음.](./media/delia-office-license.png)
     
-5. 브라우저 창을 닫습니다. 
+5. 브라우저 창을 닫습니다.
 
 ### 연습 2 - Microsoft Entra ID에서 Microsoft 365 그룹 만들기
 
