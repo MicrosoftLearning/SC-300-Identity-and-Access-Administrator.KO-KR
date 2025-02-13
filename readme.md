@@ -1,3 +1,11 @@
+#README
+
+We've turned off the ability to report issues directly on this repo and do not monitor PRs.
+
+Provide feedback here: https://aka.ms/provide-feedback
+
+Or, if you are a trainer with a microsoft.com email address, please create a ticket in AzDO.
+
 # SC-300: ID 및 액세스 관리자
 
 - **[랩 링크(HTML 형식)](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator/)**
