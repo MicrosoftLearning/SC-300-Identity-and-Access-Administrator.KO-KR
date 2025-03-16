@@ -65,7 +65,14 @@ lab:
        (where <tenant name> is your tenant name)
    ```
 
-16. **만들기**를 선택합니다. **클라이언트 ID**와 **클라이언트 비밀**을 복사합니다. Azure Portal에서 ID 공급자를 추가할 때 복사한 정보를 사용합니다.
+**랩 팁** - 결과는 이와 유사하지만 사용자의 테넌트 ID 및 테넌트 이름을 사용하여 표시됩니다.
+| URI 번호 | 링크 |
+| :--- | :--- |
+| URI 1 | https://login.microsoftonline.com |
+| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
+| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+
+16. **만들기**를 실행합니다. **클라이언트 ID**와 **클라이언트 비밀**을 복사합니다. Azure Portal에서 ID 공급자를 추가할 때 복사한 정보를 사용합니다.
 
 17. 프로젝트를 테스트 게시 상태로 둘 수 있습니다.
 

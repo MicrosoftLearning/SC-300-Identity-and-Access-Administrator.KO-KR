@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 랩 27 - Microsoft Entra 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
+# 랩 27 선택 사항 - Microsoft Entra 데이터 원본에 대한 Microsoft Sentinel Kusto 쿼리
+
+**참고** - 이 랩은 현재 제공된 학습 랩 환경에서 완료할 수 없습니다.  사용자가 원하는 경우 BYOS(사용자 자체 구독 사용) 환경에서 사용해 볼 수 있도록 여기에 랩 단계를 남겨 둡니다.  가능한 내용을 보려면 단계를 읽어보세요.  랩 환경에서 이를 실행할 수 있는 해결 방법을 찾아 이 랩을 업데이트하기 위해 적극적으로 노력하고 있으며 곧 업데이트할 예정입니다.
 
 ### 로그인 유형 = Azure 리소스 로그인
 
