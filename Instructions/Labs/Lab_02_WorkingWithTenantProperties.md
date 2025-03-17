@@ -7,7 +7,7 @@ lab:
 
 # 랩 02: 테넌트 속성 사용
 
-### 로그인 유형 = Microsoft 365 관리
+### 로그인 유형 = Microsoft 365 + E5 테넌트 로그인
 
 ## 랩 시나리오
 
@@ -32,14 +32,14 @@ Microsoft Entra ID를 사용하여 구입한 도메인을 만듭니다.  기존 
 1. **사용자 지정 도메인 이름** 필드에서 **onmicrosoft.com** 도메인 이름 앞에 **판매**를 배치하여 랩 테넌트에 대한 사용자 지정 하위 도메인을 만듭니다.  형식은 다음과 유사합니다.
 
     ```
-    Sales.###onmicrosoft.com
+    Sales.labTenantName.onmicrosoft.com
     ```
 
 **참고** - Microsoft 365 관리 센터를 열어 이 작업을 완료하라는 메시지가 표시됩니다.
 
 1. **도메인 추가**를 선택하여 하위 도메인을 추가합니다.
 
-1. 대화 상자에 하위 도메인 이름 `sales.tenantname.onmicrosoft.com`을(를) 입력합니다.
+1. 대화 상자에 하위 도메인 이름 `sales.tenantname.onmicrosoft.com`을(를) 입력합니다. *tenantname*을 테넌트의 이름으로 바꾸는 것을 잊지 마세요.
 
 1. 화면 아래에서 **이 도메인 사용** 단추를 선택합니다.
 
@@ -87,6 +87,8 @@ Azure 구독은 Microsoft Entra ID와 트러스트 관계가 있습니다. Micro
 1. **테넌트 속성**에서 **테넌트 ID**를 찾습니다. 고유한 테넌트 식별자입니다.
 
     ![테넌트 ID 상자가 강조 표시된 테넌트 속성 페이지를 표시하는 화면 이미지](./media/portal-tenant-id.png)
+
+**참고** - 테넌트 ID를 이후 랩에서 사용할 수 있게 메모장 또는 기타 위치에 기록하면 유용합니다.
 
 ### 연습 3 - 개인 정보 설정
 
