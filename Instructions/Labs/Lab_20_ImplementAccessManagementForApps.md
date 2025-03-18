@@ -19,9 +19,9 @@ lab:
 
 #### 작업 1 - Microsoft Entra 테넌트에 앱 추가
 
-1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
+1. 제공된 관리자 계정을 사용하여  [https://entra.microsoft.com](https://entra.microsoft.com) 에 로그인합니다.
 
-2. 포털 메뉴를 열고  **Microsoft Entra ID**를 선택합니다.
+2. 화면 왼쪽의 메뉴를 확인합니다.
 
 3. ID 메뉴의 **애플리케이션**에서 **엔터프라이즈 애플리케이션**을 선택합니다.
 

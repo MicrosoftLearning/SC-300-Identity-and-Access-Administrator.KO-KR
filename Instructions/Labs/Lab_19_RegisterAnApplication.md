@@ -17,7 +17,7 @@ lab:
 
 애플리케이션을 등록하면 앱과 Microsoft ID 플랫폼 간에 신뢰 관계가 설정됩니다. 트러스트는 단방향입니다. 앱이 Microsoft ID 플랫폼을 신뢰하지만 Microsoft ID 플랫폼이 앱을 신뢰하는 것은 아닙니다.
 
-1. 전역 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com)  에 로그인합니다.
+1. 제공된 관리자 계정을 사용하여 [https://entra.microsoft.com](https://entra.microsoft.com) 에 로그인합니다.
 
 2. 포털 메뉴를 열고  **Microsoft Entra ID**를 선택합니다.
 
