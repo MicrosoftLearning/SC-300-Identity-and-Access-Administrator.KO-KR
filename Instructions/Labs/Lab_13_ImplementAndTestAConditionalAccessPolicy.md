@@ -29,7 +29,7 @@ lab:
   | 설정 | 값 |
   | :--- | :--- |
   | 사용자 이름 | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-  | 암호 | 제공된 암호를 입력합니다. |
+  | 암호 | 테넌트의 관리자 암호를 입력합니다(테넌트 관리자 암호를 검색하려면 랩 리소스 탭 참조). |
     
 4. 시작 및 소개 화면을 건너뜁니다.
 
@@ -83,13 +83,13 @@ Microsoft Entra 조건부 액세스는 리소스에 액세스 할 수 있는 사
 
 조건부 액세스 정책을 테스트하여 예상대로 작동하는지 확인해야 합니다.
 
-1. 새 ‘InPrivate’ 브라우저 탭을 열고 [https://sway.cloud.microsoft](https://sway.cloud.microsoft)로 이동합니다.
+1. 새 ‘InPrivate’ 브라우저 탭을 열고 [https://sway.office.com](https://sway.office.com)로 이동합니다.
     - 메시지가 표시되면 DebraB로 로그인합니다.
 
    | 설정 | 값 |
    | :--- | :--- |
    | 사용자 이름 | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-   | 암호 | 제공된 암호를 입력합니다. |
+   | 암호 | 테넌트의 관리자 암호를 입력합니다(테넌트 관리자 암호를 검색하려면 랩 리소스 탭 참조). |
      
 2. Microsoft Sway에 액세스할 수 없는지 확인합니다.
 
