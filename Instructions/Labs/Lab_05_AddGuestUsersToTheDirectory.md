@@ -92,7 +92,7 @@ lab:
 
 #### 작업 2 - PowerShell을 사용하여 게스트 사용자 초대
 
-1. 관리자 권한으로 PowerShell을 엽니다. 이 작업은 Windows에서 PowerShell을 검색하고 관리자 권한으로 실행을 선택하여 수행할 수 있습니다. 
+1. PowerShell을 엽니다. Windows에서 PowerShell을 검색하여 이 작업을 수행할 수 있습니다.
 
 **참고** - 이 랩이 작동하려면 PowerShell 버전 7.2 이상이 필요합니다.  PowerShell이 열리면 화면 상단에 버전이 표시되며, 이전 버전을 실행 중인 경우 업데이트하지 않으면 랩의 이 부분이 실패합니다.
 
@@ -101,7 +101,7 @@ lab:
 2. 이전에 사용한 적이 없다면 Microsoft.Graph PowerShell 모듈을 설치해야 합니다.  다음 두 명령을 실행하고 확인하라는 메시지가 표시되면 Y 키를 누릅니다.
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. Microsoft.Graph 모듈이 설치되어 있는지 확인합니다.
 
