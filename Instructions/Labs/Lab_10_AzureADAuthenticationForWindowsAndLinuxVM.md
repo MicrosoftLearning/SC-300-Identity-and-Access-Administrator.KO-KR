@@ -190,4 +190,7 @@ lab:
     - **역할**: Virtual Machine 관리자 로그인 또는 Virtual Machine 사용자 로그인
     - **다음에 대한 액세스 할당**: 사용자, 그룹, 서비스 주체 또는 관리 ID
 
-1. 세부 단계에 대해서는 Azure Portal을 사용하여 Azure 역할 할당을 참조하세요.
+##### 챌린지 랩 부분
+
+이 랩의 나머지 부분을 직접 완료해 보세요. Windows 버전과 매우 유사합니다. 자세한 단계를 찾는 경우 Learn Docs에서 Azure Portal을 사용하여 Azure 역할 할당을 참조합니다.
+
